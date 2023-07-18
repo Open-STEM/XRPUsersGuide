@@ -37,6 +37,7 @@ ways that make it available to all.
    course/XRPIntro/installing_tools
    course/XRPIntro/installing_libraries
    course/XRPIntro/firstprogram
+   course/software_guide/guide
 
 
 .. toctree:: 
