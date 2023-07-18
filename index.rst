@@ -22,21 +22,11 @@ ways that make it available to all.
    :hidden:
    :caption: Course information
 
-   course/course_info/index
-   course/course_info/course_overview
-   course/course_info/joining_platforms
-
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Introduction to the XRP
 
-   course/XRPIntro/index
-   course/XRPIntro/whatis
-   course/XRPIntro/building
-   course/XRPIntro/installing_tools
-   course/XRPIntro/installing_libraries
-   course/XRPIntro/firstprogram
    course/software_guide/guide
 
 
@@ -45,25 +35,14 @@ ways that make it available to all.
    :hidden:
    :caption: Robot Driving
  
-   course/driving/index
-   course/driving/understanding_your_robots_drivetrain
-   course/driving/basic_robot_driving
-   course/driving/driving_a_distance
-   course/driving/encoders
-   course/driving/differential_steering
-   course/driving/calling_drive_functions
-   course/driving/waiting_for_button_input
+
 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Measuring Distances
 
-   course/measuring_distance/index
-   course/measuring_distance/intro
-   course/measuring_distance/obstacle_avoidance
-   course/measuring_distance/locate_object
-   course/measuring_distance/parking_garage
+ 
 
 
    .. toctree:: 
@@ -71,26 +50,14 @@ ways that make it available to all.
    :hidden:
    :caption: Robot Control
 
-   course/robot_control/index
-   course/robot_control/intro_to_robot_control
-   course/robot_control/distance_tracker
-   course/robot_control/intro_to_prop_control
-   course/robot_control/prop_distance_tracker
-   course/robot_control/intro_to_prop_wall_following
-   course/robot_control/prop_wall_following
+
    
 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Following Lines
-   
-   course/line_following/index
-   course/line_following/using_the_reflectance_sensor
-   course/line_following/on_off_control
-   course/line_following/proportional_control
-   course/line_following/proportional_control_with_two_sensors
-   course/line_following/sumo
+
 
 .. toctree:: 
    :maxdepth: 1
@@ -98,9 +65,7 @@ ways that make it available to all.
    :caption: Manipulation
    :hidden:
 
-   course/manipulation/index
-   course/manipulation/intro
-   course/manipulation/custom_functions
+
 
 .. toctree:: 
    :maxdepth: 1
@@ -108,7 +73,7 @@ ways that make it available to all.
    :caption: Delivery Challenge
    :hidden:
 
-   course/delivery_challenge/index
+
 
 .. toctree:: 
    :maxdepth: 1
