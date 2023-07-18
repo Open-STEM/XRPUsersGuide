@@ -1,9 +1,4 @@
 
-Experiential Robotics Platform (XRP)
-====================================
-
-What Is the XRP Platform?
--------------------------
 
 The XRP (Experiential Robotics Platform) [beta], developed through a collaboration 
 between WPI and DEKA Research & Development Corp., aims to level the STEM playing 
