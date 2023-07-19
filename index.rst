@@ -9,9 +9,16 @@
 .. toctree:: 
    :maxdepth: 1
    :hidden:
-   :caption: Driving and motors
+   :caption: Driving
 
    course/driving
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: Motors
+
+   course/motors
 
 .. toctree:: 
    :maxdepth: 1
@@ -20,14 +27,12 @@
  
    course/sensors
 
-
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Using the arm
 
    course/arm
-
 
 .. toctree:: 
    :maxdepth: 1
@@ -36,7 +41,7 @@
 
    course/dashboard
 
-   .. toctree:: 
+.. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Miscellaneous topics
