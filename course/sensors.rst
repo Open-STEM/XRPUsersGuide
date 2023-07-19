@@ -16,6 +16,9 @@ the sensor. A good exercise is to test the sensor by printing
 returned values at various distances from any object you want the
 robot to detect.
 
+.. image:: images/Ultrasonic.png
+    :width: 300
+
 .. note::
     It is important to wire the sensor correctly, as described in
     the assembly instructions, to ensure it works properly.
@@ -34,11 +37,23 @@ The following program drives the XRP forwards until the code
 detects an object within 10cm of the ultrasonic rangefinder.
 Then it stops.  
 
+.. image:: images/Picture15.png
+    :width: 300
+
+.. image:: images/Picture16.png
+    :width: 300
+
 This program stops the motors when the object is detected. A
 better way of solving the same problem might be to use proportional
 or PID control to gradually bring the robot to a stop to avoid
 overshoot, where inertia might carry the robot beyond the 10cm
 set point before it comes to rest.
+
+.. image:: images/LineFollower.png
+    :width: 300
+
+.. image:: images/RobotFront.png
+    :width: 300
 
 Following lines
 ---------------
@@ -62,3 +77,5 @@ The following program uses proportional control with the line
 sensors to follow a line across the driving surface for the robot.
 The Kp variable sets the gain for the controller.
 
+.. image:: images/Picture19.png
+    :width: 300

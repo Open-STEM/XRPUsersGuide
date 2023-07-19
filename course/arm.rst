@@ -11,6 +11,12 @@ horizontal inside the robot chassis and the other end of the
 rotation outside the back of the robot for picking up objects.
 The full range of arm rotation is shown in the two images below.
 
+.. image:: images/ArmIn.png
+    :width: 300
+
+.. image:: images/ArmOut.png
+    :width: 300
+
 To position the arm correctly, install it in any position and use
 it to rotate the servo to the full clockwise direction, as seen in
 the top photo. Then reinstall the arm so that it is in the shown
@@ -24,6 +30,12 @@ The method set_angle() sets the servo position to the desired angle.
 Below is an example program that moves the servo position from one
 end of its motion to the other.
 
+.. image:: images/Picture22.png
+    :width: 300
+
+.. image:: images/Picture23.png
+    :width: 300
+    
 When the servo is controlled from the program, it is held in the
 position it was last set to. To free it, that is to allow it to be
 moved by hand, the free() function may be called, and the program

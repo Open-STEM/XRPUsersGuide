@@ -56,6 +56,9 @@ software releases become available. XRPCode is a web-based programming system th
 operates inside the Google Chrome browser, so users will always be running the most 
 recent version of the tool. 
 
+.. image:: images/Picture1.png
+    :width: 300
+
 XRPLib
 ------
 XRPLib is a Python-based programming library that provides classes and functions to make
@@ -67,13 +70,21 @@ and development for XRPLib. There are functions to use:
 
 •	The default drive to control speed, direction, and power applied to the two. motors. It can handle driving and turning, with and without sensors such as the IMU, for making accurate point turns.
 
-•	All the sensors on the robot, including the motor encoders, rangefinder, and reflectance sensor. In addition, there are functions to support the IMU (Inertial Measurement Unit) to get the robot heading and accelerations as the robot is driving.
+•	All the sensors on the robot, including the motor encoders, rangefinder, and reflectance sensor. 
+
+.. image:: images/DevBoard.png
+    :width: 300
+
+In addition, there are functions to support the IMU (Inertial Measurement Unit) to get the robot heading and accelerations as the robot is driving.
 
 •	The WiFi connection so that programs can create a web server on the robot that can be used to display a dashboard on a connected phone, tablet, or computer. It is designed for displaying program status, driving controls for teleoperation, and buttons to run user functions when pressed for more control of user robot programs.
 
 •	Utility functions for sensing the user buttons, operating the LED, and robot program timing
 
 •	Several small sample programs to help illustrate how the various components are used to operate.
+
+.. image:: images/Picture3.png
+    :width: 300
 
 Other tools and languages
 -------------------------

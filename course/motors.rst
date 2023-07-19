@@ -35,7 +35,12 @@ motor. It has a single method:
 set_effort(effort_value)
 
 The effort value ranges from -1 to +1where 1 and -1 represent
-100 percent effort in either direction. In either case, the value
+100 percent effort in either direction. 
+
+.. image:: images/Wheel.png
+        :width: 300
+
+In either case, the value
 0 is no effort, and the motor is stopped.
 
 **-1 to 0**
@@ -50,7 +55,11 @@ There are four motor controllers on the XRP, numbered 1-4.
 1 and 2 are the left and right motors, and 2 and 4 are labeled
 on the robot controller board.
 
-TODO: image goes here
+.. image:: images/Picture12.png
+    :width: 300
+
+.. image:: images/Picture13.png
+    :width: 300
 
 The programs shown above set Motor 3 to 80 percent effort for 5
 seconds, then back to 0 percent effort (stopped).

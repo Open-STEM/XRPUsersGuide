@@ -43,7 +43,15 @@ follows:
 Driving for a distance
 ----------------------
 The following program fragments show how to program the robot to drive forward for 10 centimeters with an effort of 0.5 or 50 percent power. This function uses the encoders to determine when the robot has traveled the requested 10cm. In addition, this function will ensure that the robot drives in a straight line by varying the speed of the left or right motors if one is slightly faster.
-Note: when requesting a distance to drive, the encoders are used to sense the number of degrees of wheel rotation to complete the operation. If the wheels slip while driving, the distance measurement will be incorrect.
+
+.. image:: images/Picture4.png
+    :width: 300
+
+.. image:: images/Picture5.png
+    :width: 300
+
+.. note::
+  when requesting a distance to drive, the encoders are used to sense the number of degrees of wheel rotation to complete the operation. If the wheels slip while driving, the distance measurement will be incorrect.
 
 Driving with an effort
 ----------------------
@@ -55,6 +63,15 @@ control is provided, so different driving surfaces, slopes, or
 battery voltage will affect the driving speed of the robot.
 The value of effort ranges from -1 for 100 percent backward to
 0 for no effort or stopped to +1 for 100 percent effort forwards.
+
+.. image:: images/Picture6.png
+    :width: 300
+
+.. image:: images/Picture7.png
+    :width: 300
+
+.. image:: images/Picture8.png
+    :width: 300
 
 Driving at a speed
 ------------------
@@ -72,6 +89,13 @@ motors in opposite directions at the same speed. If the left wheel is
 spinning in the forward direction, the robot will rotate clockwise
 or to the right. If the right wheel is spinning in the forward
 direction, the robot will rotate counterclockwise or to the left.
+
+.. image:: images/Picture9.png
+    :width: 300
+
+.. image:: images/Picture10.png
+    :width: 300
+
 When you use the turn function, the IMU (Inertial Measurement Unit)
 gyro sensor on the robot will determine when the robot has completed
 the requested turn. This means the turn will continue until complete
