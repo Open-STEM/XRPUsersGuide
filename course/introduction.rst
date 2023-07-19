@@ -46,6 +46,9 @@ with the RP2040 microprocessor in the XRP.
 
 XRPCode
 -------
+.. image:: images/XRPCodeImage.png
+    :width: 300
+
 The recommended programming tool for the XRP is XRPCode. It is a web-based single tool
 designed specifically for the XRP to support programming in either Python or Blockly.
 It also can check and update firmware and library versions on the robot as new 
