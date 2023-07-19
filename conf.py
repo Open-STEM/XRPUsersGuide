@@ -6,9 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+version: 2
+
 project = 'XRP'
-copyright = '2023, FRC'
-author = 'FRC'
+copyright = '2023, WPI'
+author = 'WPI'
 release = '2023.0'
 
 # -- General configuration ---------------------------------------------------
