@@ -17,7 +17,7 @@ control panel for your robot. The web page can be used for:
    display on the web page like a game controller dashboard.
 
 To start the web server running you should define all the displayed
-values, user buttons, and driver panel, that start the web server.
+values, user buttons, and driver panel, then start the web server.
 
 XRPLib will create and start a web server using the robot built-in
 WiFi connectivity when the Webserver class method:
@@ -51,12 +51,6 @@ The user should enter the URL: ROBOT_URL.
 
 Using the web server
 --------------------
-The web server will start using this function:
-
-webserver.start_server(1)
-
-To start a webserver with an SSID of  ROBOT_SSID.
-
 The start_server() function will never return. Once your program calls
 start_server(), the only way of executing code will be through the
 generated program. The program will then be event-driven, that is only
