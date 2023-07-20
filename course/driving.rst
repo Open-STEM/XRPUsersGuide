@@ -73,6 +73,10 @@ The value of effort ranges from -1 for 100 percent backward to
 
 Driving at a speed
 ------------------
+Set_speed() attempts to maintain some linear speed in centimeters
+per second. The maximum speed is measured to be approximately 
+60cm/s tested on a flat surface.
+
 This program will set the robot speed to 5 cm per second, in
 centimeters per second, of the left and right wheels separately.
 If both motors are set to the same speed, the robot will drive
@@ -82,17 +86,25 @@ away from the faster wheel.
 .. image:: images/Picture7.png
     :width: 300
 
+.. image:: images/Picture7b.png
+    :width: 300
+
 Point turns
 -----------
 .. image:: images/PointTurn.gif
     :width: 300
 
-The robot can turn in place around a point directly centered between
+The robot can turn in place around a point directly centered between 
 the two drive wheels. This is done by driving the left and right drive
 motors in opposite directions at the same speed. If the left wheel is
 spinning in the forward direction, the robot will rotate clockwise
 or to the right. If the right wheel is spinning in the forward
 direction, the robot will rotate counterclockwise or to the left.
+
+The turn function specifies the number of degrees to turn, with a
+positive number indicating a counterclockwise turn, and a negative number
+indicating a clockwise turn. The second parameter specifies effort from
+-1 to 1.
 
 .. image:: images/Picture9.png
     :width: 300
