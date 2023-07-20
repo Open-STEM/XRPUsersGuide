@@ -7,53 +7,56 @@ Motor R on the robot controller board. The board also supports
 two additional motors labeled Motor 3 and Motor 4. These motors
 can be used to create additional mechanisms for the XRP.
 
-There are three classes associated with motors:
+There are four classes related to motors:
 
-**motor**
+**Motor**
     The motor class handles a single motor with a single method
     for setting the effort between -1 and 1.
 
-**encoded_motor**
-    Encoded motors are a higher level class that creates an
-    advanced motor object out of a motor and an encoder.
-    This class not only has effort, like motor, but adds
-    position and speed control in addition. There are also methods
-    for getting and setting the encoder position.
+**Encoder**
+    The encoder class is responsible for measuring the current position
+    of a motor. This is useful to derive the speed of the motor, or the
+    distance traveled by the motor.
 
-**motor_group**
+**EncodedMotor**
+    Encoded motors contain a motor and an encoder, and has higher
+    level logic for functionality that incoporate both objects.
+    This class supports features like resetting and getting the motor
+    position, setting the effort and speed of the motor, and configuring
+    what controller is used for closed-loop speed control.
+
+**MotorGroup**
     It is often desirable to treat several motors as if they
     were one. For example, in a four wheel drive robot, the
     left side motors usually get the same settings when driving
-    the robot. A motor_group is created with multiple motors,
-    then when effort is set, it is applied to both motors.
+    the robot. A motor_group is created with multiple motors, and
+    functionality like setting effort can be applied to all the motors
+    in the motor group.
 
-Motor
------
-The motor class handles setting the direction and power to a
-motor. It has a single method:
+Since the XRP bot is built with an encoder on each motor, it usually
+is not necessarily to directly deal with Motor or Encoder objects.
+Instead, use EncodedMotor or MotorGroup for higher level functionality.
+
+Using EncodedMotor
+------------------
+Interacting with EncodedMotor objects is often the most convenient way
+to control motors on the XRP. The XRPLib.defaults module provides two
+ready-made EncodedMotor objects, left_motor and right_motor, which
+allow for fully independent control over the drive motors of the robot.
+
+The EncodedMotor class exposes a few useful methods:
 
 set_effort(effort_value)
 
-The effort value ranges from -1 to +1where 1 and -1 represent
-100 percent effort in either direction. 
+The effort value ranges from -1 to +1, where negative efforts spin the
+motor in reverse, while positive efforts spin the motor forwards.
+An effort of 0 stops the motor.
 
 .. image:: images/Wheel.png
         :width: 300
 
-In either case, the value
-0 is no effort, and the motor is stopped.
-
-**-1 to 0**
-    The motor will spin in the counterclockwise direction when
-    viewing the motor shaft as shown below.
-
-**0 to +1**
-    The motor will spin in the clockwise direction when viewing
-    the motor shaft as shown below.
-
-There are four motor controllers on the XRP, numbered 1-4. 
-1 and 2 are the left and right motors, and 2 and 4 are labeled
-on the robot controller board.
+The programs shown below set Motor 3 to 80 percent effort for 5
+seconds, then afterwards, back to 0 percent effort to stop the motor.
 
 .. image:: images/Picture12.png
     :width: 300
@@ -61,15 +64,21 @@ on the robot controller board.
 .. image:: images/Picture13.png
     :width: 300
 
-The programs shown above set Motor 3 to 80 percent effort for 5
-seconds, then back to 0 percent effort (stopped).
 
-Encoder
--------
 
-Encoded motor
--------------
+Constructing EncodedMotor objects
+---------------------------------
 
-Measuring motor rotations
--------------------------
+There are four motor controllers total on the XRP, numbered 1-4. 
+1 and 2 are the left and right motors, and 3 and 4 are labeled
+on the robot controller board. left_motor and right_motor objects
+are provided by default in the XRPLib.defaults module, but you
+construct your own EncodedMotor objects as follows:
 
+    motor = EncodedMotor.get_default_encoded_motor(index=3)
+
+The index parameter specifies which of the four motors (1-4) it is.
+
+In Blockly, constructing motor objects is not necessary. Under the
+"Individual Motors" category, each block takes in a parameter to specify
+which motor to use.
