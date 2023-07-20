@@ -108,3 +108,32 @@ The example programs below set a speed of 60 rpm for the left motor:
 
 .. image:: images/PictureMotorSpeed2.png
     :width: 300
+
+**set_speed_controller(controller)**
+
+The set_speed() function relies on a controller to determine how to vary
+the effort of the motor to maintain the specified speed. By default, the
+controller is a PID controller, but it can be changed to any object that
+implements the Controller abstract class.
+
+The example below sets the speed controller with custom PID tunings. For
+more information on controllers, refer to the page under Miscellaneous Topics.
+Currently, there is no support for custom controllers in Blockly.
+
+.. image:: images/PicturePID.png
+    :width: 300
+
+**get_speed() -> float**
+
+Returns the current speed of the motor in rotations per minute, as measured
+by the encoder.
+
+**get_position() -> float**
+
+Returns the current position of the motor in rotations, as measured by the
+encoder.
+
+**reset_encoder_position()**
+
+Resets the encoder position to 0. get_position() returns the difference in
+position since the last reset.
