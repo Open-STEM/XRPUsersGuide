@@ -103,3 +103,15 @@ function to do any operation that is required.
    webserver.add_button("blink", lambda: print(led.blink(2)))
    webserver.add_button("LED_Off", lambda: led.off())
 
+Sample dashboard output
+-----------------------
+Below is an example of a dashboard that contains data
+logging, function buttons, and driving controls. This is
+a screen capture from a cell phone web browser where one
+can push buttons to run functions or use arrow keys as well
+as viewing values from the program.
+
+.. image:: images/DashboardScreen.jpg
+   :width: 300
+
+
