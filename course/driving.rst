@@ -32,7 +32,7 @@ follows:
     The effort reflects the amount of power (or average voltage)
     supplied to the motors. For a given effort, the speed will
     vary depending on things like the driving surface, the
-    battery voltage, and the slope (either flat, uphill or downhill)
+    battery voltage, and the slope (either flat, uphill or downhill).
 
 **Speed**
     The speed is the actual number of centimeters per second that
@@ -64,14 +64,12 @@ battery voltage will affect the driving speed of the robot.
 The value of effort ranges from -1 for 100 percent backward to
 0 for no effort or stopped to +1 for 100 percent effort forwards.
 
+.. image:: images/Picture8.png
+    :width: 400
+
 .. image:: images/Picture6.png
     :width: 300
 
-.. image:: images/Picture7.png
-    :width: 300
-
-.. image:: images/Picture8.png
-    :width: 300
 
 Driving at a speed
 ------------------
@@ -81,8 +79,14 @@ If both motors are set to the same speed, the robot will drive
 straight. If they are different, the robot will turn in a direction
 away from the faster wheel.
 
+.. image:: images/Picture7.png
+    :width: 300
+
 Point turns
 -----------
+.. image:: images/PointTurn.gif
+    :width: 300
+
 The robot can turn in place around a point directly centered between
 the two drive wheels. This is done by driving the left and right drive
 motors in opposite directions at the same speed. If the left wheel is
@@ -114,6 +118,9 @@ making it the center of rotation. The circle's diameter traveled by
 the moving wheel will be twice the wheel track (the distance between
 the two wheels).
 
+.. image:: images/SwingTurn.gif
+    :width: 300
+
 Smooth turns
 ------------
 Smooth turns are where the two wheels move in the same direction
@@ -121,3 +128,6 @@ so that the robot drives in an arc, eventually completing a full
 circle. The circle's radius depends on the speed difference between
 the two wheels. The larger the difference, the smaller the circle
 diameter.
+
+.. image:: images/SmoothTurn.gif
+    :width: 300
