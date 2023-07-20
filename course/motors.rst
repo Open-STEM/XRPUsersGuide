@@ -1,6 +1,6 @@
 Motors
 ======
-Adding motors
+Motor classes
 -------------
 The XRP has two drive motors connected to the ports Motor L and
 Motor R on the robot controller board. The board also supports
@@ -44,13 +44,40 @@ to control motors on the XRP. The XRPLib.defaults module provides two
 ready-made EncodedMotor objects, left_motor and right_motor, which
 allow for fully independent control over the drive motors of the robot.
 
-The EncodedMotor class exposes a few useful methods:
+There are four motor controllers total on the XRP, numbered 1-4. 
+1 and 2 are the left and right motors, and 3 and 4 are labeled
+on the robot controller board. left_motor and right_motor objects
+are provided by default in the XRPLib.defaults module. Let's take
+a look at how we can use the left_motor object to set the left motor
+to an effort of 0.75.
 
-set_effort(effort_value)
+.. image:: images/PictureLeftMotor.png
+        :width: 300
 
-The effort value ranges from -1 to +1, where negative efforts spin the
-motor in reverse, while positive efforts spin the motor forwards.
-An effort of 0 stops the motor.
+Alternatively, you may also construct your own EncodedMotor objects,
+which is needed to control motors 3 and 4. The following code sets
+Motor 3 to an effort of 0.75.
+
+.. image:: images/PictureMotor3.png
+        :width: 300
+
+In Blockly, constructing motor objects is not necessary. Under the
+"Individual Motors" category, each block takes in a parameter to specify
+which motor to use. This is all that is needed to set Motor 3 to an effort
+of 0.75 in Blockly:
+
+.. image:: images/PictureMotor3Blockly.png
+        :width: 300
+
+Methods for EncodedMotor objects
+--------------------------------
+
+**set_effort(effort_value)**
+
+As seen earlier, this method spins the motor at some raw effort. The
+effort value ranges from -1 to +1, where negative efforts spin the
+motor in reverse, and positive efforts spin the motor forwards. An
+effort of 0 stops the motor.
 
 .. image:: images/Wheel.png
         :width: 300
@@ -65,20 +92,19 @@ seconds, then afterwards, back to 0 percent effort to stop the motor.
     :width: 300
 
 
+**set_speed(speed_rpm)**
 
-Constructing EncodedMotor objects
----------------------------------
+The motor attempts to maintain a certain speed in rotations per minute.
+It reads from the encoder to determine the current speed, and adjusts
+based on a closed-loop controller, which by default is a PID controller.
+When run in free spin, the maximum speed in rpm is approximately [SPEED],
+but it will be lower under load. Similarly to set_effort(), the sign of the
+speed determines the direction of the motor.
 
-There are four motor controllers total on the XRP, numbered 1-4. 
-1 and 2 are the left and right motors, and 3 and 4 are labeled
-on the robot controller board. left_motor and right_motor objects
-are provided by default in the XRPLib.defaults module, but you
-construct your own EncodedMotor objects as follows:
+The example programs below set a speed of 60 rpm for the left motor:
 
-    motor = EncodedMotor.get_default_encoded_motor(index=3)
+.. image:: images/PictureMotorSpeed1.png
+    :width: 300
 
-The index parameter specifies which of the four motors (1-4) it is.
-
-In Blockly, constructing motor objects is not necessary. Under the
-"Individual Motors" category, each block takes in a parameter to specify
-which motor to use.
+.. image:: images/PictureMotorSpeed2.png
+    :width: 300
