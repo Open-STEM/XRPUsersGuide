@@ -97,9 +97,8 @@ seconds, then afterwards, back to 0 percent effort to stop the motor.
 The motor attempts to maintain a certain speed in rotations per minute.
 It reads from the encoder to determine the current speed, and adjusts
 based on a closed-loop controller, which by default is a PID controller.
-When run in free spin, the maximum speed in rpm is approximately [SPEED],
-but it will be lower under load. Similarly to set_effort(), the sign of the
-speed determines the direction of the motor.
+Similarly to set_effort(), the sign of the speed determines the direction
+of the motor.
 
 The example programs below set a speed of 60 rpm for the left motor:
 
