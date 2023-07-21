@@ -122,6 +122,9 @@ Currently, there is no support for custom controllers in Blockly.
 .. image:: images/PicturePID.png
     :width: 300
 
+.. image:: images/motorcommands.png
+    :width: 300
+
 **get_speed() -> float**
 
 Returns the current speed of the motor in rotations per minute, as measured
