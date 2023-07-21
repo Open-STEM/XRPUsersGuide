@@ -26,7 +26,7 @@ the speed through adjusting the the raw effort. However, through:
 a custom controller can be specified. The method expects a Controller object. The
 Controller abstract class is defined with the following three methods:
     
-**tick(error) -> float**
+**update(error) -> float**
 
 This method is called at every tick, and returns an output value given an
 input error value. This would be where PID logic would take place, for example.
@@ -48,18 +48,33 @@ controller can be used to control the speed of each motor.
 Inbuilt PID controller
 ----------------------
 The PID class is a library-provided subclass of the Controller class, and provides
-a full PID implementation with the following constructor:
+a full PID implementation. The PID constructor takes in the following parameters,
+each with default values:
 
-PID(
-    **kp** = 1.0, # Proportional gain
-    **ki** = 0.0, # Integral gain
-    **kd** = 0.0, # Derivative gain
-    **minOutput** = 0.0, # Constrain output to this minimum value
-    **maxOutput** = 1.0, # Constrain output to this maximum value
-    **maxDerivative** = None, # Constrain derivative term to this maximum magnitude
-    **tolerance** = 0.1 # Error tolerance for is_done()
-    **toleranceCount** = 1 # Number of consecutive ticks within tolerance to return True for is_done()
-    )
+**kp** = 1.0
+    Proportional gain constant
+
+**ki** = 0.0
+    Integral gain constant
+
+**kd** = 0.0
+    Derivative gain constant
+    
+**minOutput** = 0.0
+    Constrain output to this minimum value
+
+**maxOutput** = 1.0
+    Constrain output to this maximum value
+    
+**maxDerivative** = None
+    Constrain derivative term to this maximum magnitude
+    
+**tolerance** = 0.1
+    Error tolerance for is_done()
+    
+**toleranceCount** = 1
+    Number of consecutive ticks within tolerance to return True for is_done()
+
 
 The default set_speed() controller uses a PID controller with the default parameters.
 However, it may be useful to pass in a PID object to set_speed_controller() with customized
