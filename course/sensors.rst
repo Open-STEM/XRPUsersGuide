@@ -69,7 +69,7 @@ is relative to the taped line.
 
 The class reflectance has methods get_right() to retrieve the
 right reflectance value and get_left() to retrieve the left
-reflectance value.
+reflectance value. The reflectance ranges from 0 (white) to 1 (black).
 
 Line following example program
 ------------------------------
