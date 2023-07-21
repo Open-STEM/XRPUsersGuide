@@ -80,5 +80,8 @@ The Kp variable sets the gain for the controller.
 .. image:: images/Picture19.png
     :width: 300
 
+.. image:: images/PictureLinePython.png
+    :width: 300
+
 .. image:: images/linefollowing.gif
     :width: 300
