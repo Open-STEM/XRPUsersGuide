@@ -23,19 +23,24 @@ First, one (but not both) of the following two methods must be called
 to initialize the network:
 
 .. code-block:: python
+
    start_network(robot_id: int)
 This opens an access point from the XRP board to be used as a captive host.
 The network password is “remote.xrp”
 
 .. code-block:: python
+
    connect_to_network(ssid: str, password: str, timeout=10)
+
 This will connect to a wifi network with the given ssid and password. If the
 connection fails, the board will disconnect from the network and return.
 
 Then, XRPLib will create and start a web server using the robot built-in
 WiFi connectivity when the Webserver class method is called:
 
+
 .. code-block:: python
+   
    webserver.start_server(id)
 
 Note that this will fail if not exactly one of the above two methods was called first.
