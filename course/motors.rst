@@ -34,7 +34,7 @@ There are four classes related to motors:
     in the motor group.
 
 Since the XRP bot is built with an encoder on each motor, it usually
-is not necessarily to directly deal with Motor or Encoder objects.
+is not necessary to directly deal with Motor or Encoder objects.
 Instead, use EncodedMotor or MotorGroup for higher level functionality.
 
 Using EncodedMotor
