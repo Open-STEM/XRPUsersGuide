@@ -25,6 +25,7 @@ to initialize the network:
 .. code-block:: python
 
    start_network(robot_id: int)
+
 This opens an access point from the XRP board to be used as a captive host.
 The network password is “remote.xrp”
 
@@ -42,6 +43,9 @@ WiFi connectivity when the Webserver class method is called:
 .. code-block:: python
    
    webserver.start_server(id)
+
+.. image:: images/StartServer.png
+   :width: 200
 
 Note that this will fail if not exactly one of the above two methods was called first.
 This function call will:
@@ -89,6 +93,9 @@ Some examples are:
    webserver.log_data("Dict", {"a":1,"b":2,"c":3})
    webserver.log_data("Tuple", (1,2,3))
 
+.. image:: images/ServerExample1.png
+   :width: 300
+
 Teleop driving from the dashboard
 ---------------------------------
 To drive the robot, a program can create a driving interface by
@@ -107,6 +114,9 @@ Here is an example of how to do set up those bindings using lambdas
    webserver.registerBackwardButton(lambda: drivetrain.set_effort(-0.5, -0.5))
    webserver.registerStopButton(lambda: drivetrain.set_effort(0, 0))
 
+.. image:: images/ServerExample2.png
+   :width: 300
+
 By using the set_effort function, the robot will continue to drive 
 after a single button press until told to do something else.
 
@@ -120,6 +130,9 @@ function to do any operation that is required.
    webserver.add_button("test", lambda: print("test"))
    webserver.add_button("blink", lambda: print(led.blink(2)))
    webserver.add_button("LED_Off", lambda: led.off())
+
+.. image:: images/ServerExample3.png
+   :width: 300
 
 Sample dashboard output
 -----------------------
