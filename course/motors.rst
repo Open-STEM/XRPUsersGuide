@@ -54,6 +54,9 @@ to an effort of 0.75.
 .. image:: images/PictureLeftMotor.png
         :width: 300
 
+.. image:: images/LeftMotor.png
+        :width: 300
+
 Alternatively, you may also construct your own EncodedMotor objects,
 which is needed to control motors 3 and 4. The following code sets
 Motor 3 to an effort of 0.75.
@@ -83,7 +86,8 @@ effort of 0 stops the motor.
         :width: 300
 
 The programs shown below set Motor 3 to 80 percent effort for 5
-seconds, then afterwards, back to 0 percent effort to stop the motor.
+seconds, then afterwards, back to 0 percent effort to stop the motor. 
+This example uses motor 3, but any motor can be used in its place.
 
 .. image:: images/Picture12.png
     :width: 300
@@ -94,8 +98,8 @@ seconds, then afterwards, back to 0 percent effort to stop the motor.
 
 **set_speed(speed_rpm)**
 
-The motor attempts to maintain a certain speed in rotations per minute.
-It reads from the encoder to determine the current speed, and adjusts
+Unlike the Drivetrain object which uses cm/second, the motor objects handle speed in rotations per minute. 
+They reads from the encoder to determine the current speed, and adjust
 based on a closed-loop controller, which by default is a PID controller.
 Similarly to set_effort(), the sign of the speed determines the direction
 of the motor.
@@ -135,7 +139,12 @@ by the encoder.
 Returns the current position of the motor in rotations, as measured by the
 encoder.
 
+**get_count() -> integer**
+
+Returns the current position of the motor in encoder counts, as measured by the
+encoder.
+
 **reset_encoder_position()**
 
-Resets the encoder position to 0. get_position() returns the difference in
-position since the last reset.
+Resets the encoder counts to 0. get_position() and get_count return the difference in
+distance since the last reset.

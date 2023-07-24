@@ -1,10 +1,9 @@
 Introduction
 ============
 
-The XRP (Experiential Robotics Platform) [beta], developed through a collaboration 
-between WPI and DEKA Research & Development Corp., aims to level the STEM playing 
-field globally and create a future generation of STEM innovators and technology 
-leaders.
+The XRP (Experiential Robotics Platform) [beta], started by WPI and DEKA Research & Development Corp., 
+aims to level the STEM playing field globally and create a future generation of STEM innovators 
+and technology leaders.
 
 The robot kits you received are designed to operate autonomously and perform 
 basic tasks. Its simple, tool-free assembly means robots can be built quickly, 
@@ -52,7 +51,7 @@ The recommended programming tool for the XRP is XRPCode. It is a web-based singl
 designed specifically for the XRP to support programming in either Python or Blockly.
 It also can check and update firmware and library versions on the robot as new 
 software releases become available. XRPCode is a web-based programming system that 
-operates inside the Google Chrome browser, so users will always be running the most 
+operates inside the Google Chrome or Microsoft Edge browsers, so users will always be running the most 
 recent version of the tool. 
 
 .. image:: images/Picture1.png
@@ -68,16 +67,13 @@ it easy to use all the features of the XRP Robot. XRPLib is completely open sour
 so users can download the software to see how it works. We also encourage community 
 involvement through pull requests to the library. However, we recommend contacting us 
 before spending too much time to ensure that your ideas are compatible with our plans 
-and development for XRPLib. There are functions to use:
+and development for XRPLib. 
 
-•	The default drive to control speed, direction, and power applied to the two. motors. It can handle driving and turning, with and without sensors such as the IMU, for making accurate point turns.
+Here are some primary features of the XRP:
 
-•	All the sensors on the robot, including the motor encoders, rangefinder, and reflectance sensor. 
+•	The default drive function to control speed, direction, and power applied to the two motors. It can handle driving and turning, with and without sensors such as the IMU, for making accurate point turns.
 
-.. image:: images/DevBoard.png
-    :width: 300
-
-In addition, there are functions to support the IMU (Inertial Measurement Unit) to get the robot heading and accelerations as the robot is driving.
+•	The sensors on the robot, such as the motor encoders, rangefinder, reflectance sensor, and IMU (Inertial Measurement Unit), which can get the robot heading and accelerations as it is driving.
 
 •	The WiFi connection so that programs can create a web server on the robot that can be used to display a dashboard on a connected phone, tablet, or computer. It is designed for displaying program status, driving controls for teleoperation, and buttons to run user functions when pressed for more control of user robot programs.
 
@@ -92,7 +88,7 @@ Other tools and languages
 -------------------------
 
 In addition to the supplied languages for the robot, users can program the robot using 
-other standard tools such as C and C++ using various IDEs like Visual Studio Code. 
+other standard tools such as C, C++ and WPILib using various IDEs like the Arduino IDE and Visual Studio Code. 
 VS Code has several plugins specially designed to support Python programming and the 
 Raspberry Pi Pico, which is the hardware that powers the XRP.
 

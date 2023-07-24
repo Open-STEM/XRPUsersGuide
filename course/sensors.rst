@@ -1,6 +1,9 @@
 Sensing the environment
 =======================
 
+.. image:: images/DevBoard.png
+    :width: 300
+
 Measuring the distance to an object
 -----------------------------------
 The XRP includes an ultrasonic rangefinder that can measure the
@@ -16,7 +19,7 @@ the sensor. A good exercise is to test the sensor by printing
 returned values at various distances from any object you want the
 robot to detect.
 
-.. image:: images/Ultrasonic.png
+.. image:: images/Ultrasonic.jpg
     :width: 300
 
 .. note::
@@ -49,14 +52,15 @@ or PID control to gradually bring the robot to a stop to avoid
 overshoot, where inertia might carry the robot beyond the 10cm
 set point before it comes to rest.
 
+Following lines
+---------------
+
 .. image:: images/LineFollower.png
     :width: 300
 
 .. image:: images/RobotFront.png
     :width: 300
 
-Following lines
----------------
 A reflectance sensor that can be used for line following is included
 with the XRP. It has two pairs of LEDs and light sensors. The LEDs
 emit infrared light that reflects off the driving surface. The light
@@ -78,10 +82,10 @@ sensors to follow a line across the driving surface for the robot.
 The Kp variable sets the gain for the controller.
 
 .. image:: images/Picture19.png
-    :width: 300
+    :width: 500
 
 .. image:: images/PictureLinePython.png
-    :width: 300
+    :width: 400
 
 .. image:: images/linefollowing.gif
     :width: 300

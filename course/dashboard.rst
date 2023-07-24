@@ -3,38 +3,38 @@ Creating a dashboard
 A program can display a web page that can act as a dashboard or
 control panel for your robot. The web page can be used for:
 
-1. Program debugging by displaying values such as errors, messages
-   about what the program is doing, and other status as the robot
-   is driving.
-2. Link, or bind, functions inside the program to web page buttons so
-   that when pressed the functions are invoked by the web server. Using
-   this technique, you can remote control your robot. This is also
+1. Program debugging by wirelessly displaying values such as errors, messages
+   about what the program is doing, sensor readings, and other status as the robot
+   is driving. This allows the XRP to output important values without needing to be plugged in
+2. Binding functions to web page buttons so
+   that when pressed, the functions are executed by the web server. Using
+   this technique, your device can act as a remote controller for your XRP. This is also
    a great technique to test functions as you write them by
-   invoking them from the web server.
-3. To create more graphically pleasing buttons for remote controlling
+   executing them from the web server.
+3. To create more graphically pleasing buttons for controlling
    your robot, there are predefined buttons for forward, backward,
-   left, right and stop operation that you can create. These will
+   left, right and stop operation. These will
    display on the web page like a game controller dashboard.
 
-To start the web server running you should define all the displayed
-values, user buttons, and driver panel, then start the web server.
+Before starting the web server, you should define all the displayed
+values, user buttons, and the driver panel.
 
 First, one (but not both) of the following two methods must be called
 to initialize the network:
 
-.. code-block:: python
+   .. code-block:: python
 
-   start_network(robot_id: int)
+      start_network(robot_id: int)
 
-This opens an access point from the XRP board to be used as a captive host.
-The network password is “remote.xrp”
+   This opens an access point from the XRP board to be used as a captive host.
+   The network password is “remote.xrp”
 
-.. code-block:: python
+   .. code-block:: python
 
-   connect_to_network(ssid: str, password: str, timeout=10)
+      connect_to_network(ssid: str, password: str, timeout=10)
 
-This will connect to a wifi network with the given ssid and password. If the
-connection fails, the board will disconnect from the network and return.
+   This will connect to a wifi network with the given ssid and password. If the
+   connection fails, the board will disconnect from the network and return.
 
 Then, XRPLib will create and start a web server using the robot built-in
 WiFi connectivity when the Webserver class method is called:
@@ -47,7 +47,7 @@ WiFi connectivity when the Webserver class method is called:
 .. image:: images/StartServer.png
    :width: 200
 
-Note that this will fail if not exactly one of the above two methods was called first.
+Note that this will only suceed if one (not both) of the above two methods is called first.
 This function call will:
 
 1. Bring up the WiFi interface on the robot using a robot number
@@ -65,7 +65,7 @@ The user can then connect to the robot web server using a phone,
 tablet, or computer to see the web page the robot program creates.
 
 .. note::
-   If you connect to the robot using to programming computer, you
+   If you connect to the robot to the computer you are using to programming it, you
    might lose connectivity with the internet, so that XRPCode stops
    working.
 
@@ -75,14 +75,13 @@ Using the web server
 --------------------
 The start_server() function will never return. Once your program calls
 start_server(), the only way of executing code will be through the
-generated program. The program will then be event-driven, that is only
+generated program. The program will then be event-driven, that is, only
 responding to pushbutton events from the web server.
 
 Display running program data
 ----------------------------
-A progra can log values to the web server using by supplying a name
-that will become a label for the value and the value itself which can
-be any expression.
+A program can log any expression to the web server as a value by supplying a text label
+for the value and the value itself.
 
 Some examples are:
 
@@ -132,7 +131,7 @@ function to do any operation that is required.
    webserver.add_button("LED_Off", lambda: led.off())
 
 .. image:: images/ServerExample3.png
-   :width: 300
+   :width: 400
 
 Sample dashboard output
 -----------------------
