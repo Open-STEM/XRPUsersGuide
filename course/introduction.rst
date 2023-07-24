@@ -1,3 +1,6 @@
+.. image:: images/XRP.jpg
+    :width: 300
+
 Introduction
 ============
 
