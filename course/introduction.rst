@@ -47,7 +47,7 @@ XRPCode
 -------
 
 
-The recommended programming tool for the XRP is XRPCode. It is a web-based single tool
+The recommended programming tool for the XRP is `XRPCode <https://xrpcode.wpi.edu>`_. It is a web-based single tool
 designed specifically for the XRP to support programming in either Python or Blockly.
 It also can check and update firmware and library versions on the robot as new 
 software releases become available. XRPCode is a web-based programming system that 
@@ -62,7 +62,7 @@ recent version of the tool.
 
 XRPLib
 ------
-XRPLib is a Python-based programming library that provides classes and functions to make
+`XRPLib <https://open-stem.github.io/XRP_MicroPython/index.html>`_ is a Python-based programming library that provides classes and functions to make
 it easy to use all the features of the XRP Robot. XRPLib is completely open source, 
 so users can download the software to see how it works. We also encourage community 
 involvement through pull requests to the library. However, we recommend contacting us 
@@ -91,6 +91,18 @@ In addition to the supplied languages for the robot, users can program the robot
 other standard tools such as C, C++ and WPILib using various IDEs like the Arduino IDE and Visual Studio Code. 
 VS Code has several plugins specially designed to support Python programming and the 
 Raspberry Pi Pico, which is the hardware that powers the XRP.
+
+Where to find the tools
+-----------------------
+
+XRPCode IDE: 
+https://xrpcode.wpi.edu/
+
+XRP API Documentation:
+https://open-stem.github.io/XRP_MicroPython/index.html
+
+XRP Curriculum:
+https://introtoroboticsv2.readthedocs.io/en/latest/
 
 
 
