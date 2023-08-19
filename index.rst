@@ -6,11 +6,20 @@
 
    course/introduction
 
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Building the XRP Robot
+
+   course/building
+ 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Driving
 
+  
    course/driving
 
 .. toctree:: 
