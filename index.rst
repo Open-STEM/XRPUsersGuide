@@ -13,7 +13,14 @@
    :caption: Building the XRP Robot
 
    course/building
- 
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Using XRPCode
+
+   course/XRPCode.rst
+  
 .. toctree:: 
    :maxdepth: 1
    :hidden:
