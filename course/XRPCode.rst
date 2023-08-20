@@ -53,34 +53,48 @@ window will show the files on the connected XRP.
 
 
 If XRPCode does not show your serial connection, or there are other connection issues please refer to
-the troubleshooting section at the bottom of this section.
-
-Now that you are connected
-
+the troubleshooting section at the bottom of this page.
 
 Using XRPCode
 -------------
-Now that the robot is connected let’s write a short program to learn about the editors.
+Now that the robot is connected this is a good time to write a short program to learn about the editors.
 
-In the editor area there should be a window asking what type of editor to use, either BLOCKLY or MICROYPTHON. (If this is not showing, click on ‘New File’ under the ‘File’ Menu) Select BLOCKLY.
+In the editor area there should be a window asking what type of editor to use, either BLOCKLY or MICROYPTHON. (If this is not showing, click on ‘New File’ under the ‘File’ Menu) and Select BLOCKLY.
 
-On the left of the Blockly area this is a palette
-of all the available blocks. Notice that they are gruped by function.
-Click on ‘Control Board’ and then click on the ‘LED on’ block. This will place this block onto your working canvas. You can move the block around and center it if you would like. Now click again on the left, this time on “Text’. Then select the first block that says “print abc” This block is now also on your canvas. You can now move around this block and place it right under the “LED on” block. You will notice that as you get close to the bottom of the “LED on” block that it will show a yellow line indicating that the two fit together. Now when you let go of the “print abc” block it should click together with the “LED on” block. Feel free to change the “abc” to say what you want to print that is useful to the program. Something like “The LED is now on” 
+On the left of the Blockly area is a palette
+of all the available blocks. Notice that they are grouped by function. For example there are groups of blocks
+for the Drivetrain functions, sensing functions, looping blocks, etc.
 
-Save this new program to the XRP. Under the ‘File’ menu select ‘Save to XRP’ A dialog will be displayed for you to give this program a name. Change the *untitled* to a name for your program like ‘first program’ and click OK. The program has now been saved to the XRP. You will see the name of your program in the Filesystem window on the left. 
+In this example we'll create a program that will turn a controller board LED on and print a message in
+the XRPCode shell window a the bottom of the screen.
 
-You can now press on the green “RUN” button, to run this program. If the power switch on your XRP is not turned on, then a warning will pop up telling you to turn on the power. Turn on the power switch and then click ‘OK’
+Click on ‘Control Board’ and then click on the ‘LED on’ block. This will place this block onto your working canvas. You can move the block around and center it if you would like. Now click again on the left, this time on “Text’. Then select the first block that says “print abc” This block is now also on your canvas. You can now move around this block and place it right under the “LED on” block. You will notice that as you get close to the bottom of the “LED on” block that it will show a yellow line indicating that the two fit together. Now when you let go of the “print abc” block it should click together with the “LED on” block. Feel free to change the “abc” to say what you want to print that is useful to the program. For example you might print something like “The LED is now on”.
 
-You will notice a few things. One the XRP the green LED next to where the USB cable connects to the XRP will go on for a little while and then turn back off. The other is that in the Shell window at the bottom of XRPCode will print out your message from the print statement. You may have also noticed that the green ‘RUN’ button turned to a red ‘STOP’ button while your program was running and then turned back to a ‘RUN’ button. If you end up writing a program that never stops, then the button will stay as the red ‘STOP’ button. Clicking on the ‘STOP’ button will stop the program and bring you back to the ‘RUN’ button and allow you to continue to modify your program.
+Save this new program to the XRP. Under the ‘File’ menu select ‘Save to XRP’ A dialog will be displayed for you to give this program a name. Change the *untitled* text to a name for your program like ‘first program’ and click OK. The program has now been saved to the XRP. You will see the name of your program in the Filesystem window on the left. 
 
-The reason that the LED goes back off, is that at the end of each program we run some code that prepares your robot for the next time you run a program. This is nice so each time you start a program your XRP will start in the same state each time.
+You can now press on the green “RUN” button, to run this program. If the power switch on your XRP is not turned on, a warning will pop up telling you to turn on the power switch. Turn on the power switch and then click ‘OK’.
 
-The ‘View’ menu is sensitive to the editor you are using. Right now you are in Blockly, meaning it will give you View options for the a Blockly program. Click on ‘View’ and then on ‘View Python’ this will bring up a view of the Python code that is being generated from your Blockly file. Let’s actually convert this Blockly program program in to a python program. Click on ‘View’ and then on “Convert to Python” 
+You will notice a few things:
+* the XRP the green LED next to where the USB cable connects to the XRP will go on for a little while and then turn back off.
+* the Shell window at the bottom of XRPCode will print out your message from the print statement.
 
-It will first give you a warning to make sure you wanted to convert the program and information about what it is going to do. Click “OK”. It will do the operation and you should notice two things have happened. 1 - There is a new ‘trash’ directory on your XRP. And 2 that your program name now ends in .py instead of .blocks. 
+You may have also noticed that the green ‘RUN’ button changed to a red ‘STOP’ button while your program was running and then turned back to a ‘RUN’ button.
 
-If you now go to the ‘View’ menu you will notice that the menu items have changed to be specific to the python editor. Fine the print statement in the program, it should be the last line. Change the message that is between the quotes. If you look at the file name tab at the top of the python editor window you will notice a white dot at the end of the name. That means that this file has been modified and has not yet been saved. Now if you click on the ‘RUN’ button it will save your program and run it again. The message in the Shell window should be your new message. 
+If you write a program that runs for a long time or never stops, the button continue to be a red ‘STOP’ button. Clicking on the ‘STOP’ button will stop the program and change to the green ‘RUN’ button and allow you to continue to modify your program.
+
+You might have noticed that the LED turns off when the program finishes. This is so that at the end of each run the XRP is reset to a known state in preparation for the next time a program is started. This is nice so that each time you start a program your XRP will start in the same state.
+
+The ‘View’ menu contents changes depending on the editor you are using. For Blockly it will show View
+options for a Blockly program. Click on ‘View’ and then on ‘View Python’ this will bring up a view of the Python code that is being generated from your Blockly file. Let’s actually convert this Blockly program program in to a python program. Click on ‘View’ and then on “Convert to Python” 
+
+XRPCode will first give you a warning to make sure you wanted to convert the program and information about what it is going to do. Click “OK”. It will do the operation and you should notice
+two things have happened:
+
+#. There is a new ‘trash’ directory on your XRP.
+
+#. Your program name now ends in .py instead of .blocks. 
+
+If you now go to the ‘View’ menu you will notice that the menu items have changed to be specific to the python editor. Find the print statement in the program, it should be the last line. Change the message that is between the quotes. If you look at the file name tab at the top of the python editor window you will notice a white dot at the end of the name. That means that this file has been modified and has not yet been saved. Now if you click on the ‘RUN’ button it will save your program and run it again. The message in the Shell window should be your new message. 
 
 You can close an editor by clicking on the X next to the file name at the top of the python editor. If you click on the X it will close the window. If you want to open the program again you can double click on the file name in the Filesystem window.
 
