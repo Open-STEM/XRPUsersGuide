@@ -20,13 +20,17 @@ Read through the change log to learn what is new in the current release of the e
 Exploring the XRPCode user interface
 ------------------------------------
 
-There are 3 major window areas for XRPCode. <img>
+.. image:: images/numberedUI.png
+    :width: 400
 
-On the left is the Filesystem window. This will show the files on your XRP whenever an XRP is connected. 
+There are 3 major window areas for XRPCode.
 
-In the middle is the space for editors, this is where you will be working on your programs.
+On the left (1) is the Filesystem window. This will show the files on your XRP whenever an XRP is connected. 
 
-At the bottom is the Shell window. This is where print statement output will be displayed. You can also type in Python code into this window in an interactive way to quickly test out some ideas.
+In the middle (2) is the space for editors, this is where you will be working on your programs.
+
+At the bottom(3) is the Shell window. This is where print statement output will be displayed. 
+You can also type in Python code into this window in an interactive way to quickly test out some ideas.
 
 Connecting your XRP to XRPCode
 ------------------------------
@@ -34,7 +38,8 @@ The XRP robot has a micro USB connector on the controller board that is connecte
 USB port with a cable.
 
 .. warning:: 
-    Many USB cables are for power only and do not transmit data. You will need a USB cable that can transfer data and power. 
+    Many USB cables are for power only and do not transmit data. You will need a USB cable that can
+    transfer data and power. 
 
 Connecting to the XRP
 ---------------------------
@@ -43,21 +48,27 @@ connection will happen automatically when the XRP is plugged in and XRPCode is s
 
 <connect button image>
 
-This will bring up a dialog that lets you select the computers serial port XRPCode will connect to. In most cases there will be just one serial device, but if there are more, select the one that is for your XRP
+This will bring up a dialog that lets you select the computers serial port XRPCode will connect to.
+In most cases there will be just one serial device, but if there are more, select the one that is
+for your XRP
 robot. Click on the CONNECT button after selecting the desired serial port.
 
 <img>
 
-When the connection is made, the CONNECT XRP button will change to a green RUN button and the Filesystem
+When the connection is made, the CONNECT XRP button will change to a green RUN button indicating that
+the connection has been made and a program can be run. The Filesystem
 window will show the files on the connected XRP.
 
-
-If XRPCode does not show your serial connection, or there are other connection issues please refer to
+If XRPCode cannot find your serial connection, or there are other connection issues please refer to
 the troubleshooting section at the bottom of this page.
 
 Using XRPCode
 -------------
 Now that the robot is connected this is a good time to write a short program to learn about the editors.
+
+.. image:: images/blocklypython.png
+    :width: 400
+
 
 In the editor area there should be a window asking what type of editor to use, either BLOCKLY or MICROYPTHON. (If this is not showing, click on ‘New File’ under the ‘File’ Menu) and Select BLOCKLY.
 
@@ -109,6 +120,9 @@ Troubleshooting XRPCode connection issues
     * Unplug the XRP from the computer and check the connection of the cable on the XRP side.
 
     * Make sure the power button on the XRP is in the off position. It will get power from the USB cable.
+
+    * Make sure you are running either Google Chrome or Microsoft Edge browsers. At the time of writing,
+      only those browsers support serial communication required for programming the XRP.
 
 **XRP was previously used for some other purpose (maybe for *FIRST* FRC programming)**
 
