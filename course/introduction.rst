@@ -19,6 +19,18 @@ The XRP platform is part of WPI's global STEM education initiative,
 which will bring inspiration and possibility to STEM education in 
 ways that make it available to all. 
 
+Two robots in one
+=================
+The XRP can be used for two different applications:
+
+* A **STEM learning platform using Python or Blockly** with custom tools designed 
+  to learn and experiment with robotics. Included is a curriculum to help learn
+  about robotics and programming. This use of the XRP is described in this document.
+* A robot to introduce new **FRC teams and team members to WPILib programming** with
+  the same tools, languages, and libraries used in developing competition robots.
+  To learn about using the XRP for the *FIRST* Robotics Competition, you should refer
+  to the `standard WPILib documentation <https://github.com/wpilibsuite/xrp-wpilib-firmware>`_.
+
 Software Tools
 ==============
 
