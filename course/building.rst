@@ -454,11 +454,13 @@ degrees of rotation so it's important to install the arm so that it can move thr
 of motion while mounted on the robot. Holding the servo so that it's flat with the wires coming out to
 the left, the arm should be mounted so that it has 180 degrees of motion from front to back. That is
 the arm will never travel below the level of the servo body. You can see how this is done by looking
-at the video at the indicated time stamp.
+at the video at the indicated time stamp. This image shows the servo at the end of its travel
+inside the robot chassis. The other end of the travel will be slightly below horizontal behind
+the robot.
 
-    .. image:: assembly/servo_arm_attached.jpg
-        :width: 200
-        :alt: Servo arm is attached to the servo
+.. image:: assembly/mounted_servo_arm.png
+    :width: 200
+    :alt: Servo arm mounted at extreme end of the servo range
 
 Initializing and testing your XRP (10:21)
 =========================================
@@ -473,7 +475,7 @@ Troubleshooting the robot build
 Generally the build of the robot is very strightforward, but from feedback we have compiled this section
 that describes some of the common issues we have seen as people are building the XRP.
 
-Rangefinder or the line following sensors don't work in the Installation Vefrificaton Test 
+Rangefinder or the line following sensors don't work in the Installation Verification Test 
 ------------------------------------------------------------------------------------------
 It is very easy to accidentally attach the rangefinder and line following sensor cables to the
 wrong connectors on the controller board. Be sure to verify that the rangefinder is in the
