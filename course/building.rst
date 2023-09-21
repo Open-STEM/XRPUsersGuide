@@ -407,15 +407,11 @@ Attaching the servo bracket to the robot chassis (7:29)
 The servo is attached to the robot by first inserting the ball end of the bracket into the upper
 slot on the back rail, then snapping the bottom part of the bracket over the bottom part of the rail.
 
-    .. change image 
-
-    .. image:: assembly/ball_end_of_servo.jpeg
+    .. image:: assembly/ball_end_of_servo.jpg
         :width: 200
         :alt: Inserting the ball end of the servo bracket into the slot into the top slot on the chassis rail
-    
-    .. change image
 
-    .. image:: assembly/top_servo_bracket.jpeg
+    .. image:: assembly/top_servo_bracket.jpg
         :width: 200
         :alt: Pushing the bottom part of the servo bracket over the bottom part of the chassis rail
 
@@ -423,9 +419,7 @@ Mounting the servo to the servo bracket (7:54)
 ----------------------------------------------
 The servo snaps into the servo bracket as shown in the photo below.
 
-    .. change image (no arm)
-
-    .. image:: assembly/servo_on_bracket.jpeg
+    .. image:: assembly/servo_on_bracket.jpg
         :width: 200
         :alt: The servo mounted in the bracket ready to snap onto the robot
 
@@ -435,9 +429,7 @@ The servo cable is connected to the slot labeled Servo 1 on the robot controller
 photo below. Be sure to connect it as shown with the black wire connecting to the Gnd terminal on the Robot
 Controller board.
 
-    .. change image (no arm)
-
-    .. image:: assembly/servo_cable_installed.jpeg
+    .. image:: assembly/servo_cable_installed.jpg
         :width: 200
         :alt: The servo cable is installed into the controller board. Make sure to connect it as shown.
 
