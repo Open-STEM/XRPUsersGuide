@@ -20,6 +20,7 @@ extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
     "sphinxcontrib.video",
+    "sphinx_rtd_theme"
 ]
 
 templates_path = ['_templates']
