@@ -19,8 +19,7 @@ release = '2023.0'
 extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
-    "sphinxcontrib.video",
-    "sphinx_rtd_theme"
+    "sphinxcontrib.video"
 ]
 
 templates_path = ['_templates']
