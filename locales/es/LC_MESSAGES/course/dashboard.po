@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, WPI
+# This file is distributed under the same license as the XRP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: XRP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-28 13:37-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../course/dashboard.rst:2
+msgid "Creating a dashboard"
+msgstr ""
+
+#: ../../course/dashboard.rst:3
+msgid ""
+"A program can display a web page that can act as a dashboard or control "
+"panel for your robot. The web page can be used for:"
+msgstr ""
+
+#: ../../course/dashboard.rst:6
+msgid ""
+"Program debugging by wirelessly displaying values such as errors, "
+"messages about what the program is doing, sensor readings, and other "
+"status as the robot is driving. This allows the XRP to output important "
+"values without needing to be plugged in"
+msgstr ""
+
+#: ../../course/dashboard.rst:9
+msgid ""
+"Binding functions to web page buttons so that when pressed, the functions"
+" are executed by the web server. Using this technique, your device can "
+"act as a remote controller for your XRP. This is also a great technique "
+"to test functions as you write them by executing them from the web "
+"server."
+msgstr ""
+
+#: ../../course/dashboard.rst:14
+msgid ""
+"To create more graphically pleasing buttons for controlling your robot, "
+"there are predefined buttons for forward, backward, left, right and stop "
+"operation. These will display on the web page like a game controller "
+"dashboard."
+msgstr ""
+
+#: ../../course/dashboard.rst:19
+msgid ""
+"Before starting the web server, you should define all the displayed "
+"values, user buttons, and the driver panel."
+msgstr ""
+
+#: ../../course/dashboard.rst:22
+msgid ""
+"First, one (but not both) of the following two methods must be called to "
+"initialize the network:"
+msgstr ""
+
+#: ../../course/dashboard.rst:29
+msgid ""
+"This opens an access point from the XRP board to be used as a captive "
+"host. The network password is “remote.xrp”"
+msgstr ""
+
+#: ../../course/dashboard.rst:36
+msgid ""
+"This will connect to a wifi network with the given ssid and password. If "
+"the connection fails, the board will disconnect from the network and "
+"return."
+msgstr ""
+
+#: ../../course/dashboard.rst:39
+msgid ""
+"Then, XRPLib will create and start a web server using the robot built-in "
+"WiFi connectivity when the Webserver class method is called:"
+msgstr ""
+
+#: ../../course/dashboard.rst:50
+msgid ""
+"Note that this will only suceed if one (not both) of the above two "
+"methods is called first. This function call will:"
+msgstr ""
+
+#: ../../course/dashboard.rst:53
+msgid ""
+"Bring up the WiFi interface on the robot using a robot number parameter "
+"to create a unique SSID. When a device (computer, phone, or tablet) "
+"connects to that SSID from the network settings, it will then be on the "
+"robot's local network and no longer on the internet."
+msgstr ""
+
+#: ../../course/dashboard.rst:58
+msgid "Start listening on port 80 (HTTP) for a connection from a browser."
+msgstr ""
+
+#: ../../course/dashboard.rst:60
+msgid ""
+"Dynamically create a web page based on user programming that can have "
+"driving controls, buttons corresponding to user functions, and display of"
+" program data for debugging or robot monitoring."
+msgstr ""
+
+#: ../../course/dashboard.rst:64
+msgid ""
+"The user can then connect to the robot web server using a phone, tablet, "
+"or computer to see the web page the robot program creates."
+msgstr ""
+
+#: ../../course/dashboard.rst:68
+msgid ""
+"If you connect to the robot to the computer you are using to programming "
+"it, you might lose connectivity with the internet, so that XRPCode stops "
+"working."
+msgstr ""
+
+#: ../../course/dashboard.rst:72
+msgid "The user should enter the URL: ROBOT_URL."
+msgstr ""
+
+#: ../../course/dashboard.rst:75
+msgid "Using the web server"
+msgstr ""
+
+#: ../../course/dashboard.rst:76
+msgid ""
+"The start_server() function will never return. Once your program calls "
+"start_server(), the only way of executing code will be through the "
+"generated program. The program will then be event-driven, that is, only "
+"responding to pushbutton events from the web server."
+msgstr ""
+
+#: ../../course/dashboard.rst:82
+msgid "Display running program data"
+msgstr ""
+
+#: ../../course/dashboard.rst:83
+msgid ""
+"A program can log any expression to the web server as a value by "
+"supplying a text label for the value and the value itself."
+msgstr ""
+
+#: ../../course/dashboard.rst:86
+msgid "Some examples are:"
+msgstr ""
+
+#: ../../course/dashboard.rst:99
+msgid "Teleop driving from the dashboard"
+msgstr ""
+
+#: ../../course/dashboard.rst:100
+msgid ""
+"To drive the robot, a program can create a driving interface by binding "
+"functions to left, right, forward, backward arrow buttons and a stop "
+"button. If bound, these buttons will apear in a diamond pattern in the "
+"browser and will call the bound functions when pressed."
+msgstr ""
+
+#: ../../course/dashboard.rst:105
+msgid ""
+"Here is an example of how to do set up those bindings using lambdas "
+"(single line functions) that will operate a robot."
+msgstr ""
+
+#: ../../course/dashboard.rst:119
+msgid ""
+"By using the set_effort function, the robot will continue to drive after "
+"a single button press until told to do something else."
+msgstr ""
+
+#: ../../course/dashboard.rst:123
+msgid "Calling arbitrary functions from the dashboard"
+msgstr ""
+
+#: ../../course/dashboard.rst:124
+msgid ""
+"A program can create a button, that when pressed, will call a user "
+"function to do any operation that is required."
+msgstr ""
+
+#: ../../course/dashboard.rst:137
+msgid "Sample dashboard output"
+msgstr ""
+
+#: ../../course/dashboard.rst:138
+msgid ""
+"Below is an example of a dashboard that contains data logging, function "
+"buttons, and driving controls. This is a screen capture from a cell phone"
+" web browser where one can push buttons to run functions or use arrow "
+"keys as well as viewing values from the program."
+msgstr ""
+

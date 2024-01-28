@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, WPI
+# This file is distributed under the same license as the XRP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: XRP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-28 13:37-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../course/sensors.rst:2
+msgid "Sensing the environment"
+msgstr ""
+
+#: ../../course/sensors.rst:8
+msgid "Measuring the distance to an object"
+msgstr ""
+
+#: ../../course/sensors.rst:9
+msgid ""
+"The XRP includes an ultrasonic rangefinder that can measure the distance "
+"to objects in front of it.  The sensor has two transducers; one acts as a"
+" speaker, and the other acts as a microphone. It does it by sending a "
+"burst of ultrasonic sound out of the speaker that hits an object in front"
+" of the robot. The sound reflects off the object back to the sensor and "
+"is captured by the microphone. The time for that round trip determines "
+"the distance to the object. Understanding how well the sound reflects off"
+" various objects of different sizes, profiles, and materials is important"
+" for using the sensor. A good exercise is to test the sensor by printing "
+"returned values at various distances from any object you want the robot "
+"to detect."
+msgstr ""
+
+#: ../../course/sensors.rst:26
+msgid ""
+"It is important to wire the sensor correctly, as described in the "
+"assembly instructions, to ensure it works properly. Interchanging the "
+"trigger and echo wires is a common error using that part."
+msgstr ""
+
+#: ../../course/sensors.rst:31
+msgid ""
+"XRPLib has a rangefinder class that takes care of the sending and "
+"receiving signals to the sensor. All the program has to do is request the"
+" distance, and the library returns it. There is a single method called "
+"distance() that returns the distance to the nearest object in "
+"centimeters. The range of operation is from 2cm to 4m."
+msgstr ""
+
+#: ../../course/sensors.rst:38
+msgid "Example use of the rangefinder"
+msgstr ""
+
+#: ../../course/sensors.rst:39
+msgid ""
+"The following program drives the XRP forwards until the code detects an "
+"object within 10cm of the ultrasonic rangefinder. Then it stops."
+msgstr ""
+
+#: ../../course/sensors.rst:49
+msgid ""
+"This program stops the motors when the object is detected. A better way "
+"of solving the same problem might be to use proportional or PID control "
+"to gradually bring the robot to a stop to avoid overshoot, where inertia "
+"might carry the robot beyond the 10cm set point before it comes to rest."
+msgstr ""
+
+#: ../../course/sensors.rst:56
+msgid "Following lines"
+msgstr ""
+
+#: ../../course/sensors.rst:64
+msgid ""
+"A reflectance sensor that can be used for line following is included with"
+" the XRP. It has two pairs of LEDs and light sensors. The LEDs emit "
+"infrared light that reflects off the driving surface. The light sensor "
+"measure the reflected light intensity, which depends on the surface below"
+" the sensor. Electrical tape is typically used to make a line that the "
+"robot can follow and has a different reflectivity than the surface, "
+"usually a whiteboard or tabletop. With a pair of sensors, the robot can "
+"read the reflectance value and tell where it is relative to the taped "
+"line."
+msgstr ""
+
+#: ../../course/sensors.rst:74
+msgid ""
+"The class reflectance has methods get_right() to retrieve the right "
+"reflectance value and get_left() to retrieve the left reflectance value. "
+"The reflectance ranges from 0 (white) to 1 (black)."
+msgstr ""
+
+#: ../../course/sensors.rst:79
+msgid "Line following example program"
+msgstr ""
+
+#: ../../course/sensors.rst:80
+msgid ""
+"The following program uses proportional control with the line sensors to "
+"follow a line across the driving surface for the robot. The Kp variable "
+"sets the gain for the controller."
+msgstr ""
+
