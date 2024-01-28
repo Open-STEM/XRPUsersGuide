@@ -2,7 +2,7 @@
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Introoduction to the XRP
+   :caption: Introduction to the XRP
 
    course/introduction
 
