@@ -122,7 +122,7 @@ https://introtoroboticsv2.readthedocs.io/en/latest/
 
 Getting help
 ------------
-We have set up a `Discourse server <https://https://xrp.discourse.group>`_
+We have set up a `Discourse server <https://xrp.discourse.group>`_
 where you can get help from our team as well as members
 of the community using XRP robots.  
 
