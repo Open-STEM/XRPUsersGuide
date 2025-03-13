@@ -11,6 +11,29 @@ Operating the LED
 
 Waiting for a button press
 --------------------------
+There are 3 buttons on the XRP control circuit board that are:
+
+    Reset
+        Resets the robot controller causing the main program to start up after initialiization
+    Boot Sel
+        Puts the contoller into boot loader mode when pressed while power is being applied.
+        The controller will appear as a connected drive that can accept new firmware that is dragged to it
+    User
+        A selectable button that can be read by the robot program using functions in the XRP
+        software library.
+
+.. figure:: images/XRP_Push_Buttons.jpg
+    :width: 450
+
+    Pushbuttons on the XRP controller circuit board
+
+
+
+To have the robot program wait for the user to press the "User" button, use the "Wait for button press"
+block if you are writing a Blockly program or with the "board.wait_for_button()" button in Python.
+
+
+
 
 Feedback-based control
 ----------------------

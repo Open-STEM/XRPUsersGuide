@@ -8,7 +8,24 @@ the wiring is correct and all the pieces are added correctly to the chassis.
 Below is a video provided by SparkFun Electronics showing how to assemble the robot followed
 by a step by step set of written instructions below.
 
-.. youtube:: JQyKhzlMSms
+.. tabs::
+
+   .. tab:: XRP Beta
+
+      .. youtube:: JQyKhzlMSms
+    
+   .. tab:: XRP Version 1
+
+      .. youtube:: JQyKhzlMSms
+
+
+.. admonition:: Assembling a Version 1 XRP kit
+
+    These directions illustrate how to assemble an XRP Beta robot. With the recent
+    release of Version 1, the directions are almost identical, but a few things
+    have changed. This site will update soon with updates to the instrcutions where
+    there are changes. Until then, it is suggested to use a combination of these
+    instructions and the SparkFun V1 Assembly video (above).
 
 |
 |
@@ -34,11 +51,24 @@ simple as possible. You can also 3D print your own parts to attach to the chassi
 
 **Robot controller**
 
-    .. image:: assembly/robot_controller.jpeg
-        :width: 200
-        :alt: Robot controller circuit board
+.. tabs::
 
-The robot controller has the RP2040 microprocessor that reads the sensors inputs, runs
+   .. tab:: XRP Beta
+
+        .. image:: assembly/robot_controller.jpeg
+            :width: 200
+            :alt: Robot controller circuit board
+    
+   .. tab:: XRP Version 1
+
+        .. image:: assembly/robot_controller.jpeg
+            :width: 200
+            :alt: Robot controller circuit board
+
+
+
+The robot controller has the RP2350 microprocessor for Version 1 and the RP2040
+microprocessor for the Beta version that reads the sensors inputs, runs
 the Python or Blockly program and drives the actuators (motors). It also has additional
 components to sense accelerations and headings of the robot, and communicate over WiFi
 with your laptop or phone.

@@ -19,6 +19,16 @@ The XRP platform is part of WPI's global STEM education initiative,
 which will bring inspiration and possibility to STEM education in 
 ways that make it available to all. 
 
+XRP versions
+------------
+There are two versions of the XRP in the field or available for purchase:
+
+#. The Beta version of XRP released July 2023
+#. Version 1 of XRP released March 14, 2025
+
+Throughout this document you will see cases where there are differences between the two versions
+and in those cases, information about both versions will be documented.
+
 Two robots in one
 =================
 The XRP can be used for two different applications:
