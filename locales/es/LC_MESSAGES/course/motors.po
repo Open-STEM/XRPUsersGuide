@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, WPI
+# This file is distributed under the same license as the XRP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: XRP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-28 13:37-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../course/motors.rst:2
+msgid "Motors"
+msgstr ""
+
+#: ../../course/motors.rst:4
+msgid "Motor classes"
+msgstr ""
+
+#: ../../course/motors.rst:5
+msgid ""
+"The XRP has two drive motors connected to the ports Motor L and Motor R "
+"on the robot controller board. The board also supports two additional "
+"motors labeled Motor 3 and Motor 4. These motors can be used to create "
+"additional mechanisms for the XRP."
+msgstr ""
+
+#: ../../course/motors.rst:10
+msgid "There are four classes related to motors:"
+msgstr ""
+
+#: ../../course/motors.rst:14
+msgid "**Motor**"
+msgstr ""
+
+#: ../../course/motors.rst:13
+msgid ""
+"The motor class handles a single motor with a single method for setting "
+"the effort between -1 and 1."
+msgstr ""
+
+#: ../../course/motors.rst:19
+msgid "**Encoder**"
+msgstr ""
+
+#: ../../course/motors.rst:17
+msgid ""
+"The encoder class is responsible for measuring the current position of a "
+"motor. This is useful to derive the speed of the motor, or the distance "
+"traveled by the motor."
+msgstr ""
+
+#: ../../course/motors.rst:26
+msgid "**EncodedMotor**"
+msgstr ""
+
+#: ../../course/motors.rst:22
+msgid ""
+"Encoded motors contain a motor and an encoder, and has higher level logic"
+" for functionality that incoporate both objects. This class supports "
+"features like resetting and getting the motor position, setting the "
+"effort and speed of the motor, and configuring what controller is used "
+"for closed-loop speed control."
+msgstr ""
+
+#: ../../course/motors.rst:34
+msgid "**MotorGroup**"
+msgstr ""
+
+#: ../../course/motors.rst:29
+msgid ""
+"It is often desirable to treat several motors as if they were one. For "
+"example, in a four wheel drive robot, the left side motors usually get "
+"the same settings when driving the robot. A motor_group is created with "
+"multiple motors, and functionality like setting effort can be applied to "
+"all the motors in the motor group."
+msgstr ""
+
+#: ../../course/motors.rst:36
+msgid ""
+"Since the XRP bot is built with an encoder on each motor, it usually is "
+"not necessary to directly deal with Motor or Encoder objects. Instead, "
+"use EncodedMotor or MotorGroup for higher level functionality."
+msgstr ""
+
+#: ../../course/motors.rst:41
+msgid "Using EncodedMotor"
+msgstr ""
+
+#: ../../course/motors.rst:42
+msgid ""
+"Interacting with EncodedMotor objects is often the most convenient way to"
+" control motors on the XRP. The XRPLib.defaults module provides two "
+"ready-made EncodedMotor objects, left_motor and right_motor, which allow "
+"for fully independent control over the drive motors of the robot."
+msgstr ""
+
+#: ../../course/motors.rst:47
+msgid ""
+"There are four motor controllers total on the XRP, numbered 1-4. 1 and 2 "
+"are the left and right motors, and 3 and 4 are labeled on the robot "
+"controller board. left_motor and right_motor objects are provided by "
+"default in the XRPLib.defaults module. Let's take a look at how we can "
+"use the left_motor object to set the left motor to an effort of 0.75."
+msgstr ""
+
+#: ../../course/motors.rst:60
+msgid ""
+"Alternatively, you may also construct your own EncodedMotor objects, "
+"which is needed to control motors 3 and 4. The following code sets Motor "
+"3 to an effort of 0.75."
+msgstr ""
+
+#: ../../course/motors.rst:67
+msgid ""
+"In Blockly, constructing motor objects is not necessary. Under the "
+"\"Individual Motors\" category, each block takes in a parameter to "
+"specify which motor to use. This is all that is needed to set Motor 3 to "
+"an effort of 0.75 in Blockly:"
+msgstr ""
+
+#: ../../course/motors.rst:76
+msgid "Methods for EncodedMotor objects"
+msgstr ""
+
+#: ../../course/motors.rst:78
+msgid "**set_effort(effort_value)**"
+msgstr ""
+
+#: ../../course/motors.rst:80
+msgid ""
+"As seen earlier, this method spins the motor at some raw effort. The "
+"effort value ranges from -1 to +1, where negative efforts spin the motor "
+"in reverse, and positive efforts spin the motor forwards. An effort of 0 "
+"stops the motor."
+msgstr ""
+
+#: ../../course/motors.rst:88
+msgid ""
+"The programs shown below set Motor 3 to 80 percent effort for 5 seconds, "
+"then afterwards, back to 0 percent effort to stop the motor. This example"
+" uses motor 3, but any motor can be used in its place."
+msgstr ""
+
+#: ../../course/motors.rst:99
+msgid "**set_speed(speed_rpm)**"
+msgstr ""
+
+#: ../../course/motors.rst:101
+msgid ""
+"Unlike the Drivetrain object which uses cm/second, the motor objects "
+"handle speed in rotations per minute. They reads from the encoder to "
+"determine the current speed, and adjust based on a closed-loop "
+"controller, which by default is a PID controller. Similarly to "
+"set_effort(), the sign of the speed determines the direction of the "
+"motor."
+msgstr ""
+
+#: ../../course/motors.rst:107
+msgid "The example programs below set a speed of 60 rpm for the left motor:"
+msgstr ""
+
+#: ../../course/motors.rst:115
+msgid "**set_speed_controller(controller)**"
+msgstr ""
+
+#: ../../course/motors.rst:117
+msgid ""
+"The set_speed() function relies on a controller to determine how to vary "
+"the effort of the motor to maintain the specified speed. By default, the "
+"controller is a PID controller, but it can be changed to any object that "
+"implements the Controller abstract class."
+msgstr ""
+
+#: ../../course/motors.rst:122
+msgid ""
+"The example below sets the speed controller with custom PID tunings. For "
+"more information on controllers, refer to the page under Miscellaneous "
+"Topics. Currently, there is no support for custom controllers in Blockly."
+msgstr ""
+
+#: ../../course/motors.rst:132
+msgid "**get_speed() -> float**"
+msgstr ""
+
+#: ../../course/motors.rst:134
+msgid ""
+"Returns the current speed of the motor in rotations per minute, as "
+"measured by the encoder."
+msgstr ""
+
+#: ../../course/motors.rst:137
+msgid "**get_position() -> float**"
+msgstr ""
+
+#: ../../course/motors.rst:139
+msgid ""
+"Returns the current position of the motor in rotations, as measured by "
+"the encoder."
+msgstr ""
+
+#: ../../course/motors.rst:142
+msgid "**get_count() -> integer**"
+msgstr ""
+
+#: ../../course/motors.rst:144
+msgid ""
+"Returns the current position of the motor in encoder counts, as measured "
+"by the encoder."
+msgstr ""
+
+#: ../../course/motors.rst:147
+msgid "**reset_encoder_position()**"
+msgstr ""
+
+#: ../../course/motors.rst:149
+msgid ""
+"Resets the encoder counts to 0. get_position() and get_count return the "
+"difference in distance since the last reset."
+msgstr ""
+

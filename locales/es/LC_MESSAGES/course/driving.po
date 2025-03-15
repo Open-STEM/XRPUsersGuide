@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, WPI
+# This file is distributed under the same license as the XRP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: XRP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-28 13:37-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../course/driving.rst:2
+msgid "Driving"
+msgstr ""
+
+#: ../../course/driving.rst:5
+msgid "Robot driving"
+msgstr ""
+
+#: ../../course/driving.rst:6
+msgid ""
+"The XRP is a mobile robot platform where driving from one place to "
+"another is central to the design of any program. The differential_drive "
+"class makes driving easy and has functions to:"
+msgstr ""
+
+#: ../../course/driving.rst:10
+msgid ""
+"**Set the motor efforts**, which is the power or average voltage applied "
+"to the motors. The range of values can be set from -1 for full effort in "
+"reverse, to 0 for no voltage or stopped, to +1 for full effort in the "
+"forward direction."
+msgstr ""
+
+#: ../../course/driving.rst:15
+msgid ""
+"**Specify a speed to drive** in centimeters per second for each wheel. "
+"The robot will try to maintain the specified speed as best it can using "
+"the drive motor encoders."
+msgstr ""
+
+#: ../../course/driving.rst:19
+msgid ""
+"**Drive for a specified distance** using the drive motor encoders to "
+"sense how far the robot has traveled."
+msgstr ""
+
+#: ../../course/driving.rst:22
+msgid ""
+"**Make point turns** for a desired number of degrees, either clockwise or"
+" counterclockwise."
+msgstr ""
+
+#: ../../course/driving.rst:26
+msgid "Effort vs. Speed"
+msgstr ""
+
+#: ../../course/driving.rst:27
+msgid ""
+"Throughout this document, we refer to the effort and speed of the "
+"drivetrain. Although they seem similar, they are distinguished as "
+"follows:"
+msgstr ""
+
+#: ../../course/driving.rst:35
+msgid "**Effort**"
+msgstr ""
+
+#: ../../course/driving.rst:32
+msgid ""
+"The effort reflects the amount of power (or average voltage) supplied to "
+"the motors. For a given effort, the speed will vary depending on things "
+"like the driving surface, the battery voltage, and the slope (either "
+"flat, uphill or downhill)."
+msgstr ""
+
+#: ../../course/driving.rst:41
+msgid "**Speed**"
+msgstr ""
+
+#: ../../course/driving.rst:38
+msgid ""
+"The speed is the actual number of centimeters per second that the robot "
+"will travel. When set in a program, the software will automatically "
+"adjust the motor effort within its capability to keep the robot moving at"
+" the desired speed."
+msgstr ""
+
+#: ../../course/driving.rst:44
+msgid "Driving for a distance"
+msgstr ""
+
+#: ../../course/driving.rst:45
+msgid ""
+"The following program fragments show how to program the robot to drive "
+"forward for 10 centimeters with an effort of 0.5 or 50 percent power. "
+"This function uses the encoders to determine when the robot has traveled "
+"the requested 10cm. In addition, this function will ensure that the robot"
+" drives in a straight line by varying the speed of the left or right "
+"motors if one is slightly faster."
+msgstr ""
+
+#: ../../course/driving.rst:54
+msgid ""
+"when requesting a distance to drive, the encoders are used to sense the "
+"number of degrees of wheel rotation to complete the operation. If the "
+"wheels slip while driving, the distance measurement will be incorrect."
+msgstr ""
+
+#: ../../course/driving.rst:57
+msgid "Driving with an effort"
+msgstr ""
+
+#: ../../course/driving.rst:58
+msgid ""
+"This program will set the effort on the left and right drive motors to 50"
+" percent, wait for 3 seconds, and stop the motors. The set_effort() "
+"function has parameters for the left and right drive motors to allow them"
+" to be set independently. No motor speed control is provided, so "
+"different driving surfaces, slopes, or battery voltage will affect the "
+"driving speed of the robot. The value of effort ranges from -1 for 100 "
+"percent backward to 0 for no effort or stopped to +1 for 100 percent "
+"effort forwards."
+msgstr ""
+
+#: ../../course/driving.rst:75
+msgid "Driving at a speed"
+msgstr ""
+
+#: ../../course/driving.rst:76
+msgid ""
+"Set_speed() attempts to maintain some linear speed in centimeters per "
+"second. The maximum speed is measured to be approximately 60cm/s tested "
+"on a flat surface."
+msgstr ""
+
+#: ../../course/driving.rst:80
+msgid ""
+"This program will set the robot speed to 5 cm per second, in centimeters "
+"per second, of the left and right wheels separately. If both motors are "
+"set to the same speed, the robot will drive straight. If they are "
+"different, the robot will turn in a direction away from the faster wheel."
+msgstr ""
+
+#: ../../course/driving.rst:93
+msgid "Point turns"
+msgstr ""
+
+#: ../../course/driving.rst:97
+msgid ""
+"The robot can turn in place around a point directly centered between the "
+"two drive wheels. This is done by driving the left and right drive motors"
+" in opposite directions at the same speed. If the left wheel is spinning "
+"in the forward direction, the robot will rotate clockwise or to the "
+"right. If the right wheel is spinning in the forward direction, the robot"
+" will rotate counterclockwise or to the left."
+msgstr ""
+
+#: ../../course/driving.rst:104
+msgid ""
+"The turn function specifies the number of degrees to turn, with a "
+"positive number indicating a counterclockwise turn, and a negative number"
+" indicating a clockwise turn. The second parameter specifies effort from "
+"-1 to 1."
+msgstr ""
+
+#: ../../course/driving.rst:115
+msgid ""
+"When you use the turn function, the IMU (Inertial Measurement Unit) gyro "
+"sensor on the robot will determine when the robot has completed the "
+"requested turn. This means the turn will continue until complete and is "
+"not affected by wheel slip."
+msgstr ""
+
+#: ../../course/driving.rst:121
+msgid ""
+"If you were to pick up the robot while it is doing a turn, the wheels "
+"will continue turning until the gyro senses that the robot has turned the"
+" desired number of degrees."
+msgstr ""
+
+#: ../../course/driving.rst:126
+msgid "Swing turns"
+msgstr ""
+
+#: ../../course/driving.rst:127
+msgid ""
+"This type of turn is where one wheel moves forward, and the other is "
+"stationary. The robot will pivot on the stationary wheel, making it the "
+"center of rotation. The circle's diameter traveled by the moving wheel "
+"will be twice the wheel track (the distance between the two wheels)."
+msgstr ""
+
+#: ../../course/driving.rst:137
+msgid "Smooth turns"
+msgstr ""
+
+#: ../../course/driving.rst:138
+msgid ""
+"Smooth turns are where the two wheels move in the same direction so that "
+"the robot drives in an arc, eventually completing a full circle. The "
+"circle's radius depends on the speed difference between the two wheels. "
+"The larger the difference, the smaller the circle diameter."
+msgstr ""
+

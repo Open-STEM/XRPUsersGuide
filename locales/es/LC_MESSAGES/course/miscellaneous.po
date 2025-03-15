@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, WPI
+# This file is distributed under the same license as the XRP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: XRP \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-28 13:37-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../course/miscellaneous.rst:2
+msgid "Miscellaneous topics"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:4
+msgid "Operating the LED"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:13
+msgid "Waiting for a button press"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:16
+msgid "Feedback-based control"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:20
+msgid "Custom controllers"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:21
+msgid ""
+"The set_speed() method of EncodedMotor uses a pretuned PID controller to "
+"maintain the speed through adjusting the the raw effort. However, "
+"through:"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:24
+msgid "encodedMotor.set_speed_controller(controller)"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:26
+msgid ""
+"a custom controller can be specified. The method expects a Controller "
+"object. The Controller abstract class is defined with the following three"
+" methods:"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:29
+msgid "**update(error) -> float**"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:31
+msgid ""
+"This method is called at every tick, and returns an output value given an"
+" input error value. This would be where PID logic would take place, for "
+"example."
+msgstr ""
+
+#: ../../course/miscellaneous.rst:34
+msgid "**is_done() -> bool**"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:36
+msgid ""
+"This is a getter method that returns True if the controller has reached "
+"the target value, and False otherwise."
+msgstr ""
+
+#: ../../course/miscellaneous.rst:39
+msgid "**clear_history()**"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:41
+msgid ""
+"The intent of this method is to reset any internal state of the "
+"controller, i.e. integral sum. This is called on the speed controller "
+"when set_speed() is called on the encoded motor."
+msgstr ""
+
+#: ../../course/miscellaneous.rst:45
+msgid ""
+"By subclassing the Controller class and implementing these three methods,"
+" a custom controller can be used to control the speed of each motor."
+msgstr ""
+
+#: ../../course/miscellaneous.rst:49
+msgid "Inbuilt PID controller"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:50
+msgid ""
+"The PID class is a library-provided subclass of the Controller class, and"
+" provides a full PID implementation. The PID constructor takes in the "
+"following parameters, each with default values:"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:55
+msgid "**kp** = 1.0"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:55
+msgid "Proportional gain constant"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:58
+msgid "**ki** = 0.0"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:58
+msgid "Integral gain constant"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:61
+msgid "**kd** = 0.0"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:61
+msgid "Derivative gain constant"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:64
+msgid "**minOutput** = 0.0"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:64
+msgid "Constrain output to this minimum value"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:67
+msgid "**maxOutput** = 1.0"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:67
+msgid "Constrain output to this maximum value"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:70
+msgid "**maxDerivative** = None"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:70
+msgid "Constrain derivative term to this maximum magnitude"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:73
+msgid "**tolerance** = 0.1"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:73
+msgid "Error tolerance for is_done()"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:77
+msgid "**toleranceCount** = 1"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:76
+msgid "Number of consecutive ticks within tolerance to return True for is_done()"
+msgstr ""
+
+#: ../../course/miscellaneous.rst:79
+msgid ""
+"The default set_speed() controller uses a PID controller with the default"
+" parameters. However, it may be useful to pass in a PID object to "
+"set_speed_controller() with customized parameters to fine-tune the "
+"controller."
+msgstr ""
+
