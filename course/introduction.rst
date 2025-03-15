@@ -26,8 +26,12 @@ There are two versions of the XRP in the field or available for purchase:
 #. The Beta version of XRP released July 2023
 #. Version 1 of XRP released March 14, 2025
 
-Throughout this document you will see cases where there are differences between the two versions
-and in those cases, information about both versions will be documented.
+.. admonition:: Note abouut XRP versions
+
+    Throughout this document you will see cases where there are differences between the two versions
+    and in those cases, information about both versions will be documented. In the next few weeks all
+    the documentation will be updated to more fully reflect the differences between the robot kits.
+
 
 Two robots in one
 =================
