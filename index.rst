@@ -64,6 +64,14 @@
 
    course/miscellaneous
 
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: XRP Blockly Dictionary
+
+   course/blockly_dictionary
+
+
 Indices and tables
 ==================
 
