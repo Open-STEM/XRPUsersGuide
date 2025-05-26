@@ -16,7 +16,7 @@ by a step by step set of written instructions below.
     
    .. tab:: XRP Version 1
 
-      .. youtube:: JQyKhzlMSms
+      .. youtube:: vpV9_qn0hYs
 
 
 .. admonition:: Assembling a Version 1 XRP kit
