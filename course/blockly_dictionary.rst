@@ -186,6 +186,19 @@ Blockly Dictionary
       Connect to a wifi network with the given ssid and password. If the connection fails, the board will
       disconnect from the network and return.
 
+   .. tab:: Gamepad
+
+      .. figure:: blocks/gamepad_button.png
+
+      Return 1 if a button is being pressed or zero if not. The choices for the buttons are in 
+      the dropdown.
+
+      .. figure:: blocks/joystick_value.png
+
+      Get the value for a joystick. The values are from -1 to 1 for full forwards to full backwards. 
+      The particular joystick and axis is selected in the dropdown for the block.
+
+
    .. tab:: Logic
 
         .. figure:: blocks/sleep.png

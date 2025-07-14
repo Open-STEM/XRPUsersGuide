@@ -60,6 +60,13 @@
 .. toctree:: 
    :maxdepth: 1
    :hidden:
+   :caption: Using a Game Pad
+
+   course/gamepad
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
    :caption: Miscellaneous topics
 
    course/miscellaneous
