@@ -74,6 +74,13 @@
 .. toctree:: 
    :maxdepth: 1
    :hidden:
+   :caption: Frequently asked questions
+
+   course/FAQ
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
    :caption: XRP Blockly Dictionary
 
    course/blockly_dictionary

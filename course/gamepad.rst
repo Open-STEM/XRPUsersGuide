@@ -65,11 +65,11 @@ and a value of 0 when not pressed.
             servo1 = Servo.get_default_servo(1)
 
             while not (board.is_button_pressed()):
-            differentialDrive.set_effort((gp.get_value(gp.Y1)), (gp.get_value(gp.Y2)))
-            if gp.is_button_pressed(gp.BUTTON_A):
-                servo1.set_angle(90)
-            if gp.is_button_pressed(gp.BUTTON_B):
-                servo1.set_angle(135)
+                differentialDrive.set_effort((gp.get_value(gp.Y1)), (gp.get_value(gp.Y2)))
+                if gp.is_button_pressed(gp.BUTTON_A):
+                    servo1.set_angle(90)
+                if gp.is_button_pressed(gp.BUTTON_B):
+                    servo1.set_angle(135)
 
 
     .. tab:: Blockly 

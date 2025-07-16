@@ -19,14 +19,6 @@ by a step by step set of written instructions below.
       .. youtube:: vpV9_qn0hYs
 
 
-.. admonition:: Assembling a Version 1 XRP kit
-
-    These directions illustrate how to assemble an XRP Beta robot. With the recent
-    release of Version 1, the directions are almost identical, but a few things
-    have changed. This site will update soon with updates to the instrcutions where
-    there are changes. Until then, it is suggested to use a combination of these
-    instructions and the SparkFun V1 Assembly video (above).
-
 |
 |
 
