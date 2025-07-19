@@ -1,4 +1,4 @@
-Using a Game Pad (coming soon)
+Using a Game Pad
 ==================================================
 
 The Gamepad support in the XRP library works swith a single USB gamepad connected to the computer 
