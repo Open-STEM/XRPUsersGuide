@@ -97,10 +97,14 @@ XRPCode won’t connect even with a cable
 Assuming you have checked that you are using a USB data cable and not just a USB power cable. 
 Then check to see if a disk drive shows up when you connect the XRP to the computer with the 
 USB cable. The drive name may be something like:
-PICODISK
-RPI-RP2
-RP2350
+
+* PICODISK
+* RPI-RP2
+* RP2350
+
 If you see one of those drives when plugging in the XRP you need to manually put MicroPython 
 back onto your XRP. Follow this link on how to do that:
-XRP Beta Board
-XRP Board
+
+* `XRP Beta Board <https://micropython.org/download/SPARKFUN_XRP_CONTROLLER_BETA/>`_
+* `XRP Board <https://micropython.org/download/SPARKFUN_XRP_CONTROLLER/>`_
+
