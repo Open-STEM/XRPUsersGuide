@@ -356,6 +356,12 @@ Blockly Dictionary
 
    .. tab:: Text
 
+        .. figure:: blocks/comment.png
+
+            The comment block can be used to add information about your program to tell you or someone 
+            else what the program does. The blocks are ignored when the program is running, it is only 
+            for clarity of the program for a reader.
+
         .. figure:: blocks/print.png
 
             The parameter of the print block is displayed in the shell output windows in the XRPCode

@@ -51,7 +51,7 @@ Below are examples of having an infinite loop, and a loop that terminates with t
         XRP control board. Upon pressing the button the loop ends, and the the 
         program stops without requiring a lengthly reset::
 
-            while True:
+            while not (board.is_button_pressed()):
                 differential_drive.set_effort(gp.get_value(Y1), gp.get_value(Y2))
 
     .. tab:: Blockly 
