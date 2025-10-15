@@ -18,6 +18,14 @@ go to web page https://hardwaretester.com/gamepad.
 If the buttons and joysticks work on the web site then you should expect that they will 
 work with your XRP.
 
+.. admonition:: Use of gamepads requires a Bluetooth connection to the XRP
+
+    Gamepad support currently requires that the robot be connected to the laptop via a 
+    Bluetooth connection. If the robot is connected with a USB cable, you cannot also
+    use a gamepad to control the robot. This will be fixed in an upcoming release of XRP
+    code.
+
+
 How to use the game pad in XRP programs
 ---------------------------------------
 The program flow for a typical *user control* program is a loop that reads input values
