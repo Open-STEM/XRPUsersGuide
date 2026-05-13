@@ -13,6 +13,7 @@
    :caption: Building the XRP Robot
 
    course/building
+   course/building_nano/nano
 
 .. toctree::
    :maxdepth: 1

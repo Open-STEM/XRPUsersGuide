@@ -41,3 +41,18 @@ localization_languages = [
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 master_doc = 'index'
+
+
+def setup(app):
+    import os, shutil
+
+    def copy_local_static(app, exception):
+        if exception is not None:
+            return
+        for src_rel in ['course/building_nano/_static']:
+            src = os.path.join(app.confdir, src_rel)
+            dst = os.path.join(app.outdir, src_rel)
+            if os.path.isdir(src):
+                shutil.copytree(src, dst, dirs_exist_ok=True)
+
+    app.connect('build-finished', copy_local_static)
