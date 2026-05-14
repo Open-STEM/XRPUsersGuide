@@ -1,3 +1,12 @@
+.. meta::
+   :http-equiv=refresh: 0; url=course/introduction.html
+
+.. raw:: html
+
+   <script>window.location.replace("course/introduction.html");</script>
+
+This page redirects to the :doc:`Introduction <course/introduction>`. If your
+browser does not redirect automatically, follow that link.
 
 .. toctree::
    :maxdepth: 1

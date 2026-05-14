@@ -6,6 +6,11 @@ The NanoXRP is a compact version of the XRP robot — smaller chassis, single-ce
 LiPo battery, and the Cytron NanoXRP board in place of the full-size controller.
 This page covers the parts that come with the kit and the steps to assemble it.
 
+.. note::
+
+    The NanoXRP is currently only available in select countries outside of the
+    US. In the future, it may be available more broadly.
+
 .. raw:: html
 
     <script src="_static/resize-images.js"></script>
