@@ -13,13 +13,16 @@ Read through the changelog to learn what is new in the current release of XRPLib
 Exploring the XRPCode V2 user interface
 ------------------------------------
 
+.. image:: images/XRPCodeV2_Windows.png
+    :width: 400
+
 There are 3 major window areas for XRPCode V2.
 
-On the left is the Filesystem window. This will show the files on your XRP whenever an XRP is connected. 
+On the left (1) is the Filesystem window. This will show the files on your XRP whenever an XRP is connected. 
 
-In the middle is the editor. This is where you will be working on your programs.
+In the middle (2) is the editor. This is where you will be working on your programs.
 
-At the bottom is the shell window. This is where print statement output will be displayed. 
+At the bottom (3) is the shell window. This is where print statement output will be displayed. 
 You can also use the shell as a command line to write Python code as an interactive way to quickly test ideas.
 
 Connecting your XRP to XRPCode V2
@@ -36,9 +39,14 @@ Connecting to the XRP
 To establish the connection between the XRP robot and the computer, press the 'CONNECT XRP' button. Often the
 connection will happen automatically when the XRP is plugged in and XRPCode V2 is started.
 
-This will bring up a dialog that lets you select the computer's serial port that XRPCode V2 will connect to.
-In most cases, there will be just one serial device, but if there are more, select the one that is
-for your XRP robot. Click on the CONNECT button after selecting the desired serial port.
+.. image:: images/XRPCodeV2_Connecting_1.png
+    :width: 400
+
+This will bring up a dialog that lets you select Bluetooth or USB for connecting to the XRP.
+Select your desired connection method.
+
+.. image:: images/XRPCodeV2_Connecting_2.png
+    :width: 400
 
 When the connection is made, the 'CONNECT XRP' button will change to a green 'RUN' button indicating that
 the connection has been made and a program can be run. The Filesystem
@@ -66,6 +74,9 @@ Click 'Submit' when you are finished to finish creating your new file.
 On the left of the editor is a palette
 of all the available blocks. 
 
+.. image:: images/XRPCodeV2_Blockly_Palette.png
+    :width: 400
+
 Notice that they are grouped by functionality. We recommend you click through
 each section to get a sense of where blocks are.
 
@@ -89,6 +100,9 @@ example, you might print something like "The LED is now on".
 
 Under the 'File' menu select 'Save File' to save this new program. 
 
+.. image:: images/XRPCodeV2_Save_File.png
+    :width: 400
+
 The program has now been saved. You will see the name of your program in the Filesystem window on the left. 
 
 You can now press on the green 'RUN' button, to run this program. If your XRP is not turned on, a warning will pop up 
@@ -111,6 +125,9 @@ options for a Blockly program. Click on 'View' and then on 'View Python'. This w
 that is generated from your Blockly file. Let's actually convert this Blockly program program into a Python program. 
 Click on 'View' and then on Convert to 'Python'.
 
+.. image:: images/XRPCodeV2_Convert_To_Python.png
+    :width: 400
+
 XRPCode V2 will first give you a warning to make sure you want to convert the program as this cannot be undone. Click 
 'OK'. It will do the operation and you should notice two things have happened:
 
@@ -119,6 +136,9 @@ XRPCode V2 will first give you a warning to make sure you want to convert the pr
 #. Your program name now ends in .py instead of .blocks. 
 
 If you now go to the 'View' menu you will notice that the menu items have changed to be specific to Python. 
+
+.. image:: images/XRPCodeV2_Python_View.png
+    :width: 200
 
 Close the 'View' menu and find the print statement in the program; it should be the last line. Change the message 
 that is between the quotes. If you look at the file name tab at the top of the editor you will notice a white dot 
@@ -133,6 +153,9 @@ Congratulations, you have now learned how to create and run programs in XRPCode 
 Advanced Features
 --------------------
 The 3-dot menu in the top right of XRPCode V2 contains more advanced features. 
+
+.. image:: images/XRPCodeV2_Advanced_Features.png
+    :width: 200
 
 **Dashboard**
 The dashboard can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
