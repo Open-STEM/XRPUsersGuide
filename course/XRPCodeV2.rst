@@ -60,8 +60,8 @@ Using XRPCode V2
 -------------
 Now that the robot is connected, this is a good time to write a short program to learn about the editor.
 
-In the editor area, there should be a window asking what type of editor to use, either BLOCKLY or MICROPYTHON. 
-(If this is not showing, click on 'New File' under the 'File' Menu) and select BLOCKLY.
+In the menu bar, under the 'File' menu, click on 'New File' and select 'Blockly File' as the file type. Then give your file a name, such as 'First Program'.
+Click 'Submit' when you are finished to finish creating your new file.
 
 On the left of the editor is a palette
 of all the available blocks. 
@@ -84,14 +84,12 @@ canvas. You can move the block around and place it where you like. Now click on 
 first block |ico4|. This block is now also on your canvas. You can move this block around and place it right under 
 the |ico2| block. You will notice that as you get close to the bottom of the |ico2| block it will show a yellow line 
 indicating that the two fit together. When you let go of the |ico4| block it should click together with the |ico2| 
-block. Feel free to change the “abc” to say what you want to print; ideally something useful to the program. For 
-example, you might print something like “The LED is now on”.
+block. Feel free to change the "abc" to say what you want to print; ideally something useful to the program. For 
+example, you might print something like "The LED is now on".
 
-Save this new program to the XRP. Under the 'File' menu select 'Save File'. 
+Under the 'File' menu select 'Save File' to save this new program. 
 
-A dialog will be displayed for you to give this program a name. Change the *untitled* text to a name for your program 
-such as 'first program' and click 'OK'. The program has now been saved to the XRP. You will see the name of your program 
-in the Filesystem window on the left. 
+The program has now been saved. You will see the name of your program in the Filesystem window on the left. 
 
 You can now press on the green 'RUN' button, to run this program. If your XRP is not turned on, a warning will pop up 
 telling you to turn on the power switch. If this happens, flip the power switch on your XRP to 'on' and then click 'OK'.
@@ -114,8 +112,7 @@ that is generated from your Blockly file. Let's actually convert this Blockly pr
 Click on 'View' and then on Convert to 'Python'.
 
 XRPCode V2 will first give you a warning to make sure you want to convert the program as this cannot be undone. Click 
-'OK'. It will do the operation and you should notice
-two things have happened:
+'OK'. It will do the operation and you should notice two things have happened:
 
 #. There is a new 'trash' directory on your XRP.
 
@@ -132,6 +129,25 @@ You can close a file by clicking on the X next to the file name at the top of th
 program again you can double click on the file name in the Filesystem window.
 
 Congratulations, you have now learned how to create and run programs in XRPCode V2! 
+
+Advanced Features
+--------------------
+The 3-dot menu in the top right of XRPCode V2 contains more advanced features. 
+
+**Dashboard**
+The dashboard can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
+
+**Drivers**
+Drivers for devices connected to the XRP through the QWIIC connector can be easily installed through a menu.
+
+**Firmware Loader**
+XRPCode V2 contains a menu for loading firmware onto the XRP.
+
+**Backup and Restore**
+Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
+
+**Settings**
+A settings menu exists including options for language and a light or dark theme. Currently only English and Spanish are supported.
 
 Troubleshooting XRPCode V2 connection issues
 -----------------------------------------
