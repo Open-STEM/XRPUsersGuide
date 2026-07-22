@@ -26,7 +26,7 @@ There are two versions of the XRP in the field or available for purchase:
 #. The Beta version of XRP released July 2023
 #. Version 1 of XRP released March 14, 2025
 
-.. admonition:: Note abouut XRP versions
+.. admonition:: Note about XRP versions
 
     Throughout this document you will see cases where there are differences between the two versions
     and in those cases, information about both versions will be documented. In the next few weeks all
@@ -58,7 +58,7 @@ The XRP team supports two programming languages for the XRP:
 
 **Blockly**
     A graphical programming system based on Scratch to make
-    it easier to start codingyour robot without the need to
+    it easier to start coding your robot without the need to
     the syntax of Python. Internally, a Blockly program is
     translated to Python and saved on the robot. Users can
     even see the generated Python code to help them learn to
@@ -88,6 +88,20 @@ recent version of the tool.
 
 .. image:: images/XRPCodeImage.png
     :width: 300
+
+XRPCode V2
+-------
+
+
+`XRPCode V2 <https://xrpcode.wpi.edu/staging>`_ is the new recommended programming tool for the XRP. It is a web-based
+tool designed specifically for the XRP and supports programming in either Python or Blockly. The Python editor includes
+full syntax checking and prompts for XRPLib API functions and parameters. Through XRPCode V2, files can be saved to the 
+XRP or, for access to files while disconnected from the XRP, to Google Drive. 
+
+XRPCode V2 also has advanced features accessible through the right-hand 3-dot menu. It has a dashboard to display direct
+sensor measurements from the XRP, a menu for updating XRP firmware, and a menu for installing drivers to devices connected 
+to the XRP's QWIIC connector. XRPCode V2 operates inside the Google Chrome or Microsoft Edge browsers, so users will always 
+be running the most recent version of the tool.
 
 XRPLib
 ------
