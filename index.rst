@@ -30,6 +30,13 @@ browser does not redirect automatically, follow that link.
    :caption: Using XRPCode
 
    course/XRPCode.rst
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Using XRPCode V2
+
+   course/XRPCodeV2.rst
   
 .. toctree:: 
    :maxdepth: 1
