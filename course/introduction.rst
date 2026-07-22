@@ -103,6 +103,12 @@ sensor measurements from the XRP, a menu for updating XRP firmware, and a menu f
 to the XRP's QWIIC connector. XRPCode V2 operates inside the Google Chrome or Microsoft Edge browsers, so users will always 
 be running the most recent version of the tool.
 
+.. image:: images/XRPCodeV2_Blockly.png
+    :width: 300
+
+.. image:: images/XRPCodeV2_Python.png
+    :width: 300
+
 XRPLib
 ------
 `XRPLib <https://open-stem.github.io/XRP_MicroPython/index.html>`_ is a Python-based programming library that provides classes and functions to make
