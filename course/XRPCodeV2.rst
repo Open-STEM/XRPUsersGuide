@@ -10,6 +10,19 @@ Run XRPCode V2 by navigating to `XRPCode V2 web site <https://XRPCode.wpi.edu/st
 If this is your first time accessing XRPCode V2 or if there has been an update, a changelog will be displayed.
 Read through the changelog to learn what is new in the current release of XRPLib or the editor.
 
+New in XRPCode V2
+------------------
+XRPCode V2 has many new features that were not included in XRPCode V1.
+
+    * New web architecture
+    * Light and dark theme support
+    * Language support (English and Spanish)
+    * Dashboard for viewing sensors on the XRP
+    * New firmware loader
+    * Driver support for QWIIC connected devices
+    * Monaco Editor for Python (the same editor as VS Code)
+    * Google Drive support for backing up and restoring files
+
 Exploring the XRPCode V2 user interface
 ------------------------------------
 
@@ -170,7 +183,8 @@ XRPCode V2 contains a menu for loading firmware onto the XRP.
 Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
 
 **Settings**
-A settings menu exists including options for language and a light or dark theme. Currently only English and Spanish are supported.
+A settings menu exists including options for language and a light or dark theme. Currently the only supported
+languages are English and Spanish.
 
 Troubleshooting XRPCode V2 connection issues
 -----------------------------------------
