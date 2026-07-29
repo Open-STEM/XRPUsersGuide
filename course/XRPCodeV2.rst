@@ -180,7 +180,8 @@ Troubleshooting XRPCode V2 connection issues
 
     * Unplug the XRP from the computer and check the connection of the cable on the XRP side.
 
-    * Toggle the power switch on the XRP off. Confirm that the sys LED is on. This means it is properly receiving power from the USB cable. If the LED is not on, try a different cable.
+    * Toggle the power switch on the XRP off. Confirm that the sys LED is on. This means it is properly receiving power from the USB cable. 
+      If the LED is not on, try a different cable.
 
     * Make sure you are running either Google Chrome or Microsoft Edge browsers. At the time of writing,
       only those browsers support serial communication required for programming the XRP.
