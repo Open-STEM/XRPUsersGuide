@@ -171,13 +171,13 @@ The 3-dot menu in the top right of XRPCode V2 contains more advanced features.
     :width: 200
 
 **Dashboard**
-The dashboard can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
+The 'Dashboard' menu can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
 
 **Drivers**
-Drivers for devices connected to the XRP through the QWIIC connector can be easily installed through a menu.
+Drivers for devices connected to the XRP through the QWIIC connector can be easily installed through the 'Drivers' menu.
 
 **Firmware Loader**
-XRPCode V2 contains a menu for loading firmware onto the XRP.
+XRPCode V2 contains 'Firmware Loader' menu for loading firmware onto the XRP.
 
 **Backup and Restore**
 Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
