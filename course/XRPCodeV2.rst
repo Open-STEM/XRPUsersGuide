@@ -27,7 +27,7 @@ Exploring the XRPCode V2 user interface
 ------------------------------------
 
 .. image:: images/XRPCodeV2_Windows.png
-    :width: 400
+    :width: 600
 
 There are 3 major window areas for XRPCode V2.
 
@@ -53,7 +53,7 @@ To establish the connection between the XRP robot and the computer, press the 'C
 connection will happen automatically when the XRP is plugged in and XRPCode V2 is started.
 
 .. image:: images/XRPCodeV2_Connecting_1.png
-    :width: 400
+    :width: 600
 
 This will bring up a dialog that lets you select Bluetooth or USB for connecting to the XRP.
 Select your desired connection method.
@@ -88,7 +88,7 @@ On the left of the editor is a palette
 of all the available blocks. 
 
 .. image:: images/XRPCodeV2_Blockly_Palette.png
-    :width: 400
+    :width: 600
 
 Notice that they are grouped by functionality. We recommend you click through
 each section to get a sense of where blocks are.
@@ -114,7 +114,7 @@ example, you might print something like "The LED is now on".
 Under the 'File' menu select 'Save File' to save this new program. 
 
 .. image:: images/XRPCodeV2_Save_File.png
-    :width: 400
+    :width: 600
 
 The program has now been saved. You will see the name of your program in the Filesystem window on the left. 
 
@@ -139,7 +139,7 @@ that is generated from your Blockly file. Let's actually convert this Blockly pr
 Click on 'View' and then on Convert to 'Python'.
 
 .. image:: images/XRPCodeV2_Convert_To_Python.png
-    :width: 400
+    :width: 600
 
 XRPCode V2 will first give you a warning to make sure you want to convert the program as this cannot be undone. Click 
 'OK'. It will do the operation and you should notice two things have happened:
@@ -151,7 +151,7 @@ XRPCode V2 will first give you a warning to make sure you want to convert the pr
 If you now go to the 'View' menu you will notice that the menu items have changed to be specific to Python. 
 
 .. image:: images/XRPCodeV2_Python_View.png
-    :width: 200
+    :width: 300
 
 Close the 'View' menu and find the print statement in the program; it should be the last line. Change the message 
 that is between the quotes. If you look at the file name tab at the top of the editor you will notice a white dot 
@@ -173,14 +173,14 @@ your file. The second, 'Delete', will delete your file. Note that deleting a fil
 so make sure you really want to delete your file before doing so.
 
 .. image:: images/XRPCodeV2_Filesystem.png
-    :width: 200
+    :width: 300
 
 Advanced Features
 --------------------
 The 3-dot menu in the top right of XRPCode V2 contains more advanced features. 
 
 .. image:: images/XRPCodeV2_Advanced_Features.png
-    :width: 200
+    :width: 300
 
 | **Dashboard**
 | The 'Dashboard' menu can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
