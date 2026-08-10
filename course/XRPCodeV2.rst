@@ -173,7 +173,7 @@ your file. The second, 'Delete', will delete your file. Note that deleting a fil
 so make sure you really want to delete your file before doing so.
 
 .. image:: images/XRPCodeV2_Filesystem.png
-    :width: 400
+    :width: 200
 
 Advanced Features
 --------------------
@@ -195,8 +195,7 @@ The 3-dot menu in the top right of XRPCode V2 contains more advanced features.
 | Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
 
 | **Settings**
-| A settings menu exists including options for language and a light or dark theme. Currently the only supported
-languages are English and Spanish.
+| A settings menu exists including options for language and a light or dark theme. Currently the only supported languages are English and Spanish.
 
 Troubleshooting XRPCode V2 connection issues
 -----------------------------------------
