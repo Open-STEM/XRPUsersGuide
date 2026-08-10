@@ -163,6 +163,18 @@ program again you can double click on the file name in the Filesystem window.
 
 Congratulations, you have now learned how to create and run programs in XRPCode V2! 
 
+Using the Filesystem
+----------------------
+At the top of the filesystem are two buttons. The first, 'New Folder', will create a new folder and prompt you for
+a folder name. The second, 'New File', will create a new file and prompt you for a file type and file name. 
+
+Each folder and file in the filesystem will have two more buttons when hovered. The first, 'Rename', lets you rename
+your file. The second, 'Delete', will delete your file. Note that deleting a file is permanent and cannot be undone, 
+so make sure you really want to delete your file before doing so.
+
+.. image:: images/XRPCodeV2_Filesystem.png
+    :width: 400
+
 Advanced Features
 --------------------
 The 3-dot menu in the top right of XRPCode V2 contains more advanced features. 
