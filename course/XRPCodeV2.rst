@@ -182,20 +182,20 @@ The 3-dot menu in the top right of XRPCode V2 contains more advanced features.
 .. image:: images/XRPCodeV2_Advanced_Features.png
     :width: 200
 
-**Dashboard**
-The 'Dashboard' menu can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
+| **Dashboard**
+| The 'Dashboard' menu can be used to view sensor readings from the XRP when XRPCode V2 is connected to the XRP.
 
-**Drivers**
-Drivers for devices connected to the XRP through the QWIIC connector can be easily installed through the 'Drivers' menu.
+| **Drivers**
+| Drivers for devices connected to the XRP through the QWIIC connector can be easily installed through the 'Drivers' menu.
 
-**Firmware Loader**
-XRPCode V2 contains 'Firmware Loader' menu for loading firmware onto the XRP.
+| **Firmware Loader**
+| XRPCode V2 contains 'Firmware Loader' menu for loading firmware onto the XRP.
 
-**Backup and Restore**
-Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
+| **Backup and Restore**
+| Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
 
-**Settings**
-A settings menu exists including options for language and a light or dark theme. Currently the only supported
+| **Settings**
+| A settings menu exists including options for language and a light or dark theme. Currently the only supported
 languages are English and Spanish.
 
 Troubleshooting XRPCode V2 connection issues
