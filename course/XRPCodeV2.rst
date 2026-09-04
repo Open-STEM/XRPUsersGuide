@@ -31,7 +31,8 @@ Exploring the XRPCode V2 user interface
 
 There are 3 major window areas for XRPCode V2.
 
-On the left (1) is the Filesystem window. This will show the files on your XRP whenever an XRP is connected. 
+On the left (1) is the Filesystem window. This will show the files on your XRP whenever an XRP is connected or
+in your XRPCode Google Drive folder if you have connected to Google Drive. 
 
 In the middle (2) is the editor. This is where you will be working on your programs.
 
@@ -40,7 +41,7 @@ You can also use the shell as a command line to write Python code as an interact
 
 Connecting your XRP to XRPCode V2
 ------------------------------
-The XRP robot has a micro USB connector on the controller board that is connected to your computer's
+The XRP robot has a USB-C connector or a USB-A connector (for the beta version of the XRP) on the controller board that is connected to your computer's
 USB port with a cable.
 
 .. warning:: 
@@ -71,7 +72,7 @@ the troubleshooting section at the bottom of this page.
 Connecting to Google Drive
 --------------------------
 At the top of the Filesystem window is a 'Google Sign In' button. Clicking this button will open a pop out window
-prompting you to select a Google account to sign in with. By signing in to Google, files can be saved to Google Drive
+prompting you to select a Google account to sign in. By signing in to Google, files can be saved to Google Drive
 for access even when the XRP is not connected to XRPCode V2. 
 
 .. warning:: 
@@ -82,7 +83,7 @@ Using XRPCode V2
 Now that the robot is connected, this is a good time to write a short program to learn about the editor.
 
 In the menu bar, under the 'File' menu, click on 'New File' and select 'Blockly File' as the file type. Then give your file a name, such as 'First Program'.
-Click 'Submit' when you are finished to finish creating your new file.
+Click 'Submit' when you are finished to create your new file.
 
 On the left of the editor is a palette
 of all the available blocks. 
@@ -90,8 +91,8 @@ of all the available blocks.
 .. image:: images/XRPCodeV2_Blockly_Palette.png
     :width: 600
 
-Notice that they are grouped by functionality. We recommend you click through
-each section to get a sense of where blocks are.
+Notice that they are grouped by function. We recommend you click through
+each section to get a sense of what blocks are in each group.
 
 In this example, we'll create a program that will turn a controller board LED on and print a message in
 the XRPCode V2 shell window at the bottom of the screen.
@@ -195,7 +196,7 @@ The 3-dot menu in the top right of XRPCode V2 contains more advanced features.
 | Files stored on the XRP can be backed up to Google Drive, and restored to the XRP from Google Drive.
 
 | **Settings**
-| A settings menu exists including options for language and a light or dark theme. Currently the only supported languages are English and Spanish.
+| The settings menu has options for language selection and a light or dark theme. Currently the only supported languages are English and Spanish.
 
 Troubleshooting XRPCode V2 connection issues
 -----------------------------------------
