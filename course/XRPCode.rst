@@ -76,7 +76,7 @@ Notice that they are grouped by functionality. We recommend you click through
 each section to get a sense of where blocks are.
 
 In this example, we'll create a program that will turn a controller board LED on and print a message in
-the XRPCode shell window a the bottom of the screen.
+the XRPCode shell window at the bottom of the screen.
 
 
 .. |ico2| image:: images/led_on.png
